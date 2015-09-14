@@ -1,0 +1,203 @@
+\documentclass[12pt]{scrartcl}
+
+% sonderzeichen encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+
+% alternating rowcolors in tables
+\usepackage[table]{xcolor}
+\rowcolors{2}{blue!15}{white}
+
+% bilder
+\usepackage{graphicx}
+
+% pdf includes
+\usepackage{pdfpages}
+
+% toc als links gerendert
+\usepackage[hidelinks]{hyperref}
+
+% images in header & footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{\includegraphics[width=1cm]{images/eclipse1}}
+
+
+
+% show lof and lot in toc
+\usepackage[nottoc]{tocbibind}
+
+% appendix package
+\usepackage[toc,page]{appendix}
+
+% deutscher appendix name
+\addto\captionsngerman{\let\appendixtocname\appendixname%
+\let\appendixpagename\appendixname}
+
+
+
+\titlehead{\centering\includegraphics[width=6cm]{images/eclipse1}}
+\title{
+	Projektbericht: Erstellung einer Webanwendung
+	zur Verbesserung des Workflows des Erstellens von Benutzerhandbüchern
+}
+\author{
+	Oliver Herrmann \\
+	Geb.: 23.09.1992 \\
+	GNS mbH \\
+	Tel.: ---- \\
+	Email: oliver.herrman@gns.de \\
+	Ausbildungsberuf: Fachinformatiker Anwendungsentwicklung \\
+	\\
+	GNS mbH \\
+	Frohnhauser Str. 67 \\
+	45127 Essen
+}
+\date{\today, Essen}
+
+\begin{document}
+
+
+%\maketitle
+\thispagestyle{empty}
+
+\begin{center}
+	\huge \bfseries
+		Projektbericht: Erstellung einer Webanwendung
+		zur Verbesserung des Workflows des Erstellens von Benutzerhandbüchern \\[4cm]
+
+	\Large	\mdseries
+
+	\textbf{Auszubildender} \\
+	Oliver Herrmann \\
+	Geb.: 23.09.1992 \\
+	GNS mbH \\
+	Tel.: ---- \\
+	Email: \href{mailto:oliver.herrmann@gns.de}{oliver.herrmann@gns.de}  \\
+	Ausbildungsberuf: Fachinformatiker Anwendungsentwicklung \\[2cm]
+
+	\textbf{Ausbildungsbetrieb} \\
+	GNS mbH \\
+	Frohnhauser Str. 67 \\
+	45127 Essen \\[3cm]
+
+	\today, Essen
+\end{center}
+
+
+\newpage
+
+\tableofcontents
+\newpage
+
+
+
+\section{Einleitende Worte}
+\label{sec:einleitende-worte}
+...
+blondgelockter Knabe mit kohlrabenschwarzem Haar auf die grüne Bank
+sich setzte, die gelb angestrichen war.
+
+
+Alice kann es einfach nicht lassen, sie muß dem weißen Kaninchen mit
+der großen Uhr folgen und landet prompt im Wunderland. Auf ihrer Reise
+durch diese fröhlich bunte, aber auch sehr eigenartige Welt begegnet
+sie einer gestiefelten Raupe, dem verrückten Hutmacher und ist zu Gast
+bei einer nicht Geburtstags-Party. Einer hinterlistigen Tigerkatze hat
+es das Mädchen schließlich zu verdanken, daß sie den Zorn der
+Herz-Königin auf sich zieht. So etwas kann einem eigentlich nur im
+Traum passieren.
+
+
+\subsection{Test}
+
+\begin{itemize}
+  \item Alice im Wunderland
+  \item Till Eulenspiegel
+  \item Harry Potter
+  \begin{itemize}
+    \item Der Stein der Weisen
+    \item Kammer des Schreckens
+    \item Der Gefangene von Askaban
+    \item Der Feuerkelch
+    \item Der Orden des Phönix
+  \end{itemize}
+  \item Jim Knopf
+\end{itemize}
+
+zurück zu Abschnitt \ref{sec:einleitende-worte}
+
+\subsection{IDE}
+
+In Abbildung \ref{fig:eclipse-ide} ist eclipse zu sehen.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=0.8\textwidth]{images/eclipse1}	
+	\caption{Eclipse IDE}
+	\label{fig:eclipse-ide}
+\end{figure}
+
+
+
+\subsection{test2}
+
+\begin{enumerate}
+	\item erstens
+	\item zweitens
+\end{enumerate}
+
+
+\section{Tables}
+
+	Siehe \hyperref[tab:test]{Beispieltabelle}
+
+	\begin{table}
+	\centering
+	\begin{tabular}{c|c}
+
+		\rowcolor{gray!15}
+	    Table head & Table head \\\hline
+
+	    Some values & Some values \\\hline
+    
+	    Some values & Some values \\\hline
+	    
+	    Some values & Some values
+	    
+
+	\end{tabular}
+	\caption{Testdaten}
+	\label{tab:test}
+	\end{table}
+
+\clearpage
+\begin{appendices}
+\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+
+	\section{First appendix}
+		
+		\subsection{First app. subsection 1}
+		Lorem ipsum...
+
+	\section{Rechtschreibfehler}
+		% \includepdf[pages={1}, nup=1x2]{pdf/test.pdf}
+		\begin{center}
+			\includegraphics[page=1, width=.85\textwidth]{pdf/test.pdf}		
+		\end{center}
+		
+	\section{Pflichtenehft}
+		\input{include/pflichtenheft}
+
+
+\end{appendices}
+
+\clearpage
+\listoffigures
+\newpage
+
+\listoftables
+\newpage
+
+\end{document}
