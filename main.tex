@@ -21,9 +21,11 @@
 % images in header & footer
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\rhead{\includegraphics[width=1cm]{images/eclipse1}}
+\rhead{\includegraphics[width=2cm]{images/gns}}
 
-
+%listing (source code)
+\usepackage{listings}
+\input{include/js}
 
 % show lof and lot in toc
 \usepackage[nottoc]{tocbibind}
@@ -37,7 +39,8 @@
 
 
 
-\titlehead{\centering\includegraphics[width=6cm]{images/eclipse1}}
+
+\titlehead{\centering\includegraphics[width=6cm]{images/gns}}
 \title{
 	Projektbericht: Erstellung einer Webanwendung
 	zur Verbesserung des Workflows des Erstellens von Benutzerhandbüchern
@@ -73,7 +76,7 @@
 	Oliver Herrmann \\
 	Geb.: 23.09.1992 \\
 	GNS mbH \\
-	Tel.: ---- \\
+	Tel.: +49 201 109 - 1523 \\
 	Email: \href{mailto:oliver.herrmann@gns.de}{oliver.herrmann@gns.de}  \\
 	Ausbildungsberuf: Fachinformatiker Anwendungsentwicklung \\[2cm]
 
@@ -173,22 +176,29 @@ In Abbildung \ref{fig:eclipse-ide} ist eclipse zu sehen.
 	\end{table}
 
 \clearpage
+
 \begin{appendices}
+\renewcommand{\thesection}{\arabic{section}} %\Roman{section}
+
 \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
 
-	\section{First appendix}
-		
+	\section{First appendix}		
 		\subsection{First app. subsection 1}
 		Lorem ipsum...
 
+	\newpage
 	\section{Rechtschreibfehler}
-		% \includepdf[pages={1}, nup=1x2]{pdf/test.pdf}
 		\begin{center}
 			\includegraphics[page=1, width=.85\textwidth]{pdf/test.pdf}		
 		\end{center}
-		
+
+	\newpage		
 	\section{Pflichtenehft}
 		\input{include/pflichtenheft}
+		
+	\newpage
+	\section{Quellcode (Auszüge)}
+		\lstinputlisting[language=JavaScript, caption=Test.js]{code/test.js}
 
 
 \end{appendices}

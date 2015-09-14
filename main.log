@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.14)  14 SEP 2015 15:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.9.14)  14 SEP 2015 16:48
 entering extended mode
 **main.tex
 (main.tex
@@ -585,7 +585,33 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 \f@ncyO@olf=\skip62
 \f@ncyO@orf=\skip63
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tocbibind\tocbibind.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count105
+\lst@gtempboxa=\box29
+\lst@token=\toks20
+\lst@length=\count106
+\lst@currlwidth=\dimen116
+\lst@column=\count107
+\lst@pos=\count108
+\lst@lostspace=\dimen117
+\lst@width=\dimen118
+\lst@newlines=\count109
+\lst@lineno=\count110
+\lst@maxwidth=\dimen119
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count111
+\lst@skipnumbers=\count112
+\lst@framebox=\box30
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(include/js.tex) ("C:\Program Files\MiKTeX 2.9\tex\latex\tocbibind\tocbibind.st
+y"
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has section divisions on input line 50.
 
@@ -594,722 +620,45 @@ Package tocbibind Note: Using section or other style headings.
 
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\appendix\appendix.sty"
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count105
-\c@@ppsavesec=\count106
-\c@@ppsaveapp=\count107
-) (main.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen116
-\scratchbox=\box29
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen117
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks21
+\c@@pps=\count113
+\c@@ppsavesec=\count114
+\c@@ppsaveapp=\count115
 )
-\AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 59.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\base\glossaries.sty"
+Package: glossaries 2015/09/09 v4.18 (NLCT)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
 )
-\c@section@level=\count114
-)
-LaTeX Info: Redefining \ref on input line 59.
-LaTeX Info: Redefining \pageref on input line 59.
-LaTeX Info: Redefining \nameref on input line 59.
-
-(main.out) (main.out)
-\@outlinefile=\write3
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 89.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 89.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 89.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 89.
- [1
-
-{C:/Users/herrmanno/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 91.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmss.fd"
-File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-(main.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 3.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 3.
-)
-\tf@toc=\write4
-
-
-Class scrartcl Warning: Usage of deprecated font command `\sl'!
-(scrartcl)              You should note, that in 1994 font command `\sl' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\sl' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\sl' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\sl'
-(scrartcl)              by `\normalfont \slshape ' on input line 92.
-
-<images/eclipse1.png, id=55, 1265.47781pt x 734.745pt>
-File: images/eclipse1.png Graphic file (type png)
-
-<use images/eclipse1.png>
-Package pdftex.def Info: images/eclipse1.png used on input line 92.
-(pdftex.def)             Requested size: 28.45274pt x 16.51422pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (18.125pt): 
- Make it at least 20.86426pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\rm'!
-(scrartcl)              You should note, that in 1994 font command `\rm' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\rm' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\rm' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\rm'
-(scrartcl)              by `\normalfont \rmfamily ' on input line 92.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 92.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 92.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 92.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 92.
-[2 <./images/eclipse1.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 96.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 96.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 116.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 116.
-File: images/eclipse1.png Graphic file (type png)
-
-<use images/eclipse1.png>
-Package pdftex.def Info: images/eclipse1.png used on input line 137.
-(pdftex.def)             Requested size: 358.50612pt x 208.14883pt.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 152.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 152.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\sl'!
-(scrartcl)              You should note, that in 1994 font command `\sl' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\sl' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\sl' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\sl'
-(scrartcl)              by `\normalfont \slshape ' on input line 175.
-
-File: images/eclipse1.png Graphic file (type png)
-<use images/eclipse1.png>
-Package pdftex.def Info: images/eclipse1.png used on input line 175.
-(pdftex.def)             Requested size: 28.45274pt x 16.51422pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (18.125pt): 
- Make it at least 20.86426pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\rm'!
-(scrartcl)              You should note, that in 1994 font command `\rm' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\rm' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\rm' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\rm'
-(scrartcl)              by `\normalfont \rmfamily ' on input line 175.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 175.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 175.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 175.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 175.
-[3]
-
-Class scrartcl Warning: Usage of deprecated font command `\sl'!
-(scrartcl)              You should note, that in 1994 font command `\sl' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\sl' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\sl' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\sl'
-(scrartcl)              by `\normalfont \slshape ' on input line 175.
-
-File: images/eclipse1.png Graphic file (type png)
-<use images/eclipse1.png>
-Package pdftex.def Info: images/eclipse1.png used on input line 175.
-(pdftex.def)             Requested size: 28.45274pt x 16.51422pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (18.125pt): 
- Make it at least 20.86426pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\rm'!
-(scrartcl)              You should note, that in 1994 font command `\rm' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\rm' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\rm' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\rm'
-(scrartcl)              by `\normalfont \rmfamily ' on input line 175.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 175.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 175.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 175.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 175.
-[4]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 176.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 176.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 179.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 179.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 184.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 184.
- <pdf/test.pdf, id=86, page=1, 597.45204pt x 845.1575pt>
-File: pdf/test.pdf Graphic file (type pdf)
-
-<use pdf/test.pdf, page 1>
-Package pdftex.def Info: pdf/test.pdf, page1 used on input line 187.
-(pdftex.def)             Requested size: 380.91403pt x 538.84848pt.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\sl'!
-(scrartcl)              You should note, that in 1994 font command `\sl' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\sl' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\sl' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\sl'
-(scrartcl)              by `\normalfont \slshape ' on input line 188.
-
-File: images/eclipse1.png Graphic file (type png)
-<use images/eclipse1.png>
-Package pdftex.def Info: images/eclipse1.png used on input line 188.
-(pdftex.def)             Requested size: 28.45274pt x 16.51422pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (18.125pt): 
- Make it at least 20.86426pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\rm'!
-(scrartcl)              You should note, that in 1994 font command `\rm' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\rm' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\rm' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\rm'
-(scrartcl)              by `\normalfont \rmfamily ' on input line 188.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 188.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 188.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 188.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 188.
-[5
-
-]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 190.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 190.
- (include/pflichtenheft.tex
-
-Class scrartcl Warning: Usage of deprecated font command `\sl'!
-(scrartcl)              You should note, that in 1994 font command `\sl' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\sl' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\sl' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\sl'
-(scrartcl)              by `\normalfont \slshape ' on input line 7.
-
-File: images/eclipse1.png Graphic file (type png)
-<use images/eclipse1.png>
-Package pdftex.def Info: images/eclipse1.png used on input line 7.
-(pdftex.def)             Requested size: 28.45274pt x 16.51422pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (18.125pt): 
- Make it at least 20.86426pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\rm'!
-(scrartcl)              You should note, that in 1994 font command `\rm' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\rm' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\rm' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\rm'
-(scrartcl)              by `\normalfont \rmfamily ' on input line 7.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 7.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 7.
-[6 <./pdf/test.pdf>]
-
-Class scrartcl Warning: Usage of deprecated font command `\sl'!
-(scrartcl)              You should note, that in 1994 font command `\sl' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\sl' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\sl' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\sl'
-(scrartcl)              by `\normalfont \slshape ' on input line 54.
-
-File: images/eclipse1.png Graphic file (type png)
-<use images/eclipse1.png>
-Package pdftex.def Info: images/eclipse1.png used on input line 54.
-(pdftex.def)             Requested size: 28.45274pt x 16.51422pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (18.125pt): 
- Make it at least 20.86426pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\rm'!
-(scrartcl)              You should note, that in 1994 font command `\rm' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\rm' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\rm' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\rm'
-(scrartcl)              by `\normalfont \rmfamily ' on input line 54.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 54.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 54.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 54.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 54.
-[7]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 57.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 57.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\sl'!
-(scrartcl)              You should note, that in 1994 font command `\sl' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\sl' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\sl' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\sl'
-(scrartcl)              by `\normalfont \slshape ' on input line 90.
-
-File: images/eclipse1.png Graphic file (type png)
-<use images/eclipse1.png>
-Package pdftex.def Info: images/eclipse1.png used on input line 90.
-(pdftex.def)             Requested size: 28.45274pt x 16.51422pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (18.125pt): 
- Make it at least 20.86426pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\rm'!
-(scrartcl)              You should note, that in 1994 font command `\rm' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\rm' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\rm' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\rm'
-(scrartcl)              by `\normalfont \rmfamily ' on input line 90.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 90.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 90.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 90.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 90.
-[8]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 122.
-
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-
-Class scrartcl Warning: Usage of deprecated font command `\sl'!
-(scrartcl)              You should note, that in 1994 font command `\sl' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\sl' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\sl' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\sl'
-(scrartcl)              by `\normalfont \slshape ' on input line 136.
-
-File: images/eclipse1.png Graphic file (type png)
-<use images/eclipse1.png>
-Package pdftex.def Info: images/eclipse1.png used on input line 136.
-(pdftex.def)             Requested size: 28.45274pt x 16.51422pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (18.125pt): 
- Make it at least 20.86426pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\rm'!
-(scrartcl)              You should note, that in 1994 font command `\rm' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\rm' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\rm' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\rm'
-(scrartcl)              by `\normalfont \rmfamily ' on input line 136.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 136.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 136.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 136.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 136.
-[9])
-
-Class scrartcl Warning: Usage of deprecated font command `\sl'!
-(scrartcl)              You should note, that in 1994 font command `\sl' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\sl' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\sl' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\sl'
-(scrartcl)              by `\normalfont \slshape ' on input line 196.
-
-File: images/eclipse1.png Graphic file (type png)
-<use images/eclipse1.png>
-Package pdftex.def Info: images/eclipse1.png used on input line 196.
-(pdftex.def)             Requested size: 28.45274pt x 16.51422pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (18.125pt): 
- Make it at least 20.86426pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\rm'!
-(scrartcl)              You should note, that in 1994 font command `\rm' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\rm' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\rm' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\rm'
-(scrartcl)              by `\normalfont \rmfamily ' on input line 196.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 196.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 196.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 196.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 196.
-[10]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 197.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 197.
- (main.lof)
-\tf@lof=\write5
-
-
-Class scrartcl Warning: Usage of deprecated font command `\sl'!
-(scrartcl)              You should note, that in 1994 font command `\sl' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\sl' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\sl' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\sl'
-(scrartcl)              by `\normalfont \slshape ' on input line 198.
-
-File: images/eclipse1.png Graphic file (type png)
-<use images/eclipse1.png>
-Package pdftex.def Info: images/eclipse1.png used on input line 198.
-(pdftex.def)             Requested size: 28.45274pt x 16.51422pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (18.125pt): 
- Make it at least 20.86426pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\rm'!
-(scrartcl)              You should note, that in 1994 font command `\rm' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\rm' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\rm' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\rm'
-(scrartcl)              by `\normalfont \rmfamily ' on input line 198.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 198.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 198.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 198.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 198.
-[11
-
-]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 200.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 200.
- (main.lot)
-\tf@lot=\write6
-
-
-Class scrartcl Warning: Usage of deprecated font command `\sl'!
-(scrartcl)              You should note, that in 1994 font command `\sl' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\sl' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\sl' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\sl'
-(scrartcl)              by `\normalfont \slshape ' on input line 201.
-
-File: images/eclipse1.png Graphic file (type png)
-<use images/eclipse1.png>
-Package pdftex.def Info: images/eclipse1.png used on input line 201.
-(pdftex.def)             Requested size: 28.45274pt x 16.51422pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (18.125pt): 
- Make it at least 20.86426pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\rm'!
-(scrartcl)              You should note, that in 1994 font command `\rm' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\rm' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\rm' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\rm'
-(scrartcl)              by `\normalfont \rmfamily ' on input line 201.
-
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 201.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 201.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 201.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 201.
-[12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 203.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 203.
- (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 203.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: FB2A8F1CD489475B6D5BFF26815A0CCA;408.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 203.
- ) 
+\XKV@depth=\count116
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+
+! LaTeX Error: File `mfirstuc.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.46 \RequirePackage
+                    {textcase}
+*** (cannot \read from terminal in nonstop modes)
+
+ 
 Here is how much of TeX's memory you used:
- 9151 strings out of 493673
- 136754 string characters out of 3143948
- 292999 words of memory out of 3000000
- 12292 multiletter control sequences out of 15000+200000
- 18196 words of font info for 39 fonts, out of 3000000 for 9000
+ 9858 strings out of 493673
+ 147279 string characters out of 3143948
+ 305869 words of memory out of 3000000
+ 13095 multiletter control sequences out of 15000+200000
+ 4702 words of font info for 16 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 45i,15n,47p,255b,563s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\herrmanno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi
-600\ectt1000.pk> <C:\Users\herrmanno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
-knappen\ec\dpi600\ecrm1000.pk> <C:\Users\herrmanno\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\jknappen\ec\dpi600\ecrm0700.pk> <C:\Users\herrmanno\AppData\Local\
-MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk> <C:\Users\herrmanno\
-AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk> <C:\Us
-ers\herrmanno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1
-200.pk> <C:\Users\herrmanno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
-c\dpi600\ecsx1440.pk> <C:\Users\herrmanno\AppData\Local\MiKTeX\2.9\fonts\pk\ljf
-our\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\herrmanno\AppData\Local\MiKTeX\2.
-9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1200.pk> <C:\Users\herrmanno\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsx1728.pk> <C:\Users\herrm
-anno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecsl1200.pk> <
-C:\Users\herrmanno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecrm1728.pk> <C:\Users\herrmanno\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
-pen\ec\dpi600\ecbx1728.pk> <C:\Users\herrmanno\AppData\Local\MiKTeX\2.9\fonts\p
-k\ljfour\jknappen\ec\dpi600\ecbx2488.pk><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (12 pages, 498341 bytes).
-PDF statistics:
- 654 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 75 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 45i,1n,47p,1843b,221s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
