@@ -1,0 +1,51 @@
+\label{app:risikoanalyse}
+
+	\begin{longtable}{
+		p{\dimexpr 0.2\linewidth-2\tabcolsep} |
+		p{\dimexpr 0.2\linewidth-2\tabcolsep} |
+		p{\dimexpr 0.2\linewidth-2\tabcolsep} |
+		p{\dimexpr 0.2\linewidth-2\tabcolsep} |
+		p{\dimexpr 0.2\linewidth-2\tabcolsep}
+	}
+
+		\rowcolor{white!15}				
+		\textbf{Risiko} & \textbf{Ursache} & \textbf{Maßnahme} & \textbf{Eintrittswahr. nach der Maßnahme} & \textbf{Auswirkung nach der Maßnahme} \\\endhead\hline
+
+	
+		\rowcolor{MidnightBlue!25}
+		\multicolumn{5}{c}{Terminrisiken} \\\hline
+		Nicht einhalten des Abnahmetermins & uneingeplante Hindernisse & keine & mittel & Start der Anwendungsnutzung verzögert sich \\
+		
+		\rowcolor{MidnightBlue!25}
+		\multicolumn{5}{c}{Technische Risiken} \\\hline
+		Anwendung ist auf Zielplattform nicht lauffähig & Entwicklung gegen falsche Plattform & Anpassung der Anwendung & mittel & Zustäzlicher Zeitbedarf für Anpassungen \\
+		
+		\rowcolor{MidnightBlue!25}
+		\multicolumn{5}{c}{Personelle Risiken} \\\hline
+		Ausfall des Projektleiters & Krankheit & keine & gering & Projekt kommt zum erliegen \\		
+		Ausfall eines Projektmitarbeiters & Krankheit & keine & gering & Projekt kommt zum erliegen \\
+						
+		\rowcolor{MidnightBlue!25}
+		\multicolumn{5}{c}{Planungsrisiken} \\\hline
+		Unterschätzung der Dauer einzelner Phasen & mangelnde Erfahrung & nachtrgäliche Planung & mittel & Verzögerung des Projektabschluss \\
+		Auslassung relevanter Phasen & mangelnde Erfahrung & nachträgliche Planung & gering & Verzögerung des Projektabschluss \\
+		
+		\rowcolor{MidnightBlue!25}
+		\multicolumn{5}{c}{Risiken der Analyse und Konzeption} \\\hline
+		Fehlerhafte Ist-Analyse & ungenaue Analyse & Nachbesserung d. Analyse & gering & iterativer Rücksprung im Entwicklungsprozess \\
+		Fehlerhafte Soll-Analyse & fehlerhafte Spezifikation & Nachbesserung d. Analyse & gering & iterativer Rücksprung im Entwicklungsprozess \\
+		Fehlerhafte Architektur / Konzept & ungenaue Spezifikation & Neukonzeption & gering & iterativer Rücksprung im Entwicklungsprozess \\
+		
+		\rowcolor{MidnightBlue!25}
+		\multicolumn{5}{c}{Realisierungrisiken} \\\hline
+		Unerwartete Entwicklungsprobleme & nicht bestimmbar & teilweise NeuKonzeption & mittel & verlängte Entwicklungszeit \\
+		
+		\rowcolor{MidnightBlue!25}
+		\multicolumn{5}{c}{Betreuungs- und Wartungsrisiken} \\\hline
+		Breaking-Changes & MediaWiki Update & Anpassung der Geschäftslogik & hoch & keine \\
+	    
+	
+	\caption{Risikoanalyse detailliert}
+	\label{tab:risikoanalyse_detail}	
+\end{longtable}
+	

@@ -1,213 +1,362 @@
-\documentclass[12pt]{scrartcl}
+\documentclass[12pt, xcolor=dvipsnames]{scrartcl}
 
-% sonderzeichen encoding
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[ngerman]{babel}
-
-% alternating rowcolors in tables
-\usepackage[table]{xcolor}
-\rowcolors{2}{blue!15}{white}
-
-% bilder
-\usepackage{graphicx}
-
-% pdf includes
-\usepackage{pdfpages}
-
-% toc als links gerendert
-\usepackage[hidelinks]{hyperref}
+% include packages
+\input{header/PACKAGES}
 
 % images in header & footer
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\rhead{\includegraphics[width=2cm]{images/gns}}
-
-%listing (source code)
-\usepackage{listings}
-\input{include/js}
-
-% show lof and lot in toc
-\usepackage[nottoc]{tocbibind}
-
-% appendix package
-\usepackage[toc,page]{appendix}
-
-% deutscher appendix name
-\addto\captionsngerman{\let\appendixtocname\appendixname%
-\let\appendixpagename\appendixname}
+\input{style/STYLE}
 
 
+% keine einrück für neue absätze
+\setlength{\parindent}{0pt}
 
+% benötigt für float angaben an tables, z.B. \begin{tyble}[H]
+\usepackage{float}
 
-\titlehead{\centering\includegraphics[width=6cm]{images/gns}}
-\title{
-	Projektbericht: Erstellung einer Webanwendung
-	zur Verbesserung des Workflows des Erstellens von Benutzerhandbüchern
-}
-\author{
-	Oliver Herrmann \\
-	Geb.: 23.09.1992 \\
-	GNS mbH \\
-	Tel.: ---- \\
-	Email: oliver.herrman@gns.de \\
-	Ausbildungsberuf: Fachinformatiker Anwendungsentwicklung \\
-	\\
-	GNS mbH \\
-	Frohnhauser Str. 67 \\
-	45127 Essen
-}
-\date{\today, Essen}
+% eurozeichen
+\usepackage{eurosym}
+\usepackage{textcomp}
+\usepackage{amstext} % for \text
+\DeclareRobustCommand{\officialeuro}{%
+  \ifmmode\expandafter\text\fi
+  {\fontencoding{U}\fontfamily{eurosym}\selectfont e}}
+
+% used for linebreaks in table cells
+\usepackage{pbox}
 
 \begin{document}
 
 
-%\maketitle
-\thispagestyle{empty}
-
-\begin{center}
-	\huge \bfseries
-		Projektbericht: Erstellung einer Webanwendung
-		zur Verbesserung des Workflows des Erstellens von Benutzerhandbüchern \\[4cm]
-
-	\Large	\mdseries
-
-	\textbf{Auszubildender} \\
-	Oliver Herrmann \\
-	Geb.: 23.09.1992 \\
-	GNS mbH \\
-	Tel.: +49 201 109 - 1523 \\
-	Email: \href{mailto:oliver.herrmann@gns.de}{oliver.herrmann@gns.de}  \\
-	Ausbildungsberuf: Fachinformatiker Anwendungsentwicklung \\[2cm]
-
-	\textbf{Ausbildungsbetrieb} \\
-	GNS mbH \\
-	Frohnhauser Str. 67 \\
-	45127 Essen \\[3cm]
-
-	\today, Essen
-\end{center}
-
-
-\newpage
+\input{include/title}
+\clearpage
 
 \tableofcontents
-\newpage
-
-
-
-\section{Einleitende Worte}
-\label{sec:einleitende-worte}
-...
-blondgelockter Knabe mit kohlrabenschwarzem Haar auf die grüne Bank
-sich setzte, die gelb angestrichen war.
-
-
-Alice kann es einfach nicht lassen, sie muß dem weißen Kaninchen mit
-der großen Uhr folgen und landet prompt im Wunderland. Auf ihrer Reise
-durch diese fröhlich bunte, aber auch sehr eigenartige Welt begegnet
-sie einer gestiefelten Raupe, dem verrückten Hutmacher und ist zu Gast
-bei einer nicht Geburtstags-Party. Einer hinterlistigen Tigerkatze hat
-es das Mädchen schließlich zu verdanken, daß sie den Zorn der
-Herz-Königin auf sich zieht. So etwas kann einem eigentlich nur im
-Traum passieren.
-
-
-\subsection{Test}
-
-\begin{itemize}
-  \item Alice im Wunderland
-  \item Till Eulenspiegel
-  \item Harry Potter
-  \begin{itemize}
-    \item Der Stein der Weisen
-    \item Kammer des Schreckens
-    \item Der Gefangene von Askaban
-    \item Der Feuerkelch
-    \item Der Orden des Phönix
-  \end{itemize}
-  \item Jim Knopf
-\end{itemize}
-
-zurück zu Abschnitt \ref{sec:einleitende-worte}
-
-\subsection{IDE}
-
-In Abbildung \ref{fig:eclipse-ide} ist eclipse zu sehen.
-
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[width=0.8\textwidth]{images/eclipse1}	
-	\caption{Eclipse IDE}
-	\label{fig:eclipse-ide}
-\end{figure}
-
-
-
-\subsection{test2}
-
-\begin{enumerate}
-	\item erstens
-	\item zweitens
-\end{enumerate}
-
-
-\section{Tables}
-
-	Siehe \hyperref[tab:test]{Beispieltabelle}
-
-	\begin{table}
-	\centering
-	\begin{tabular}{c|c}
-
-		\rowcolor{gray!15}
-	    Table head & Table head \\\hline
-
-	    Some values & Some values \\\hline
-    
-	    Some values & Some values \\\hline
-	    
-	    Some values & Some values
-	    
-
-	\end{tabular}
-	\caption{Testdaten}
-	\label{tab:test}
-	\end{table}
-
 \clearpage
 
-\begin{appendices}
-\renewcommand{\thesection}{\arabic{section}} %\Roman{section}
-
-\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
-
-	\section{First appendix}		
-		\subsection{First app. subsection 1}
-		Lorem ipsum...
-
-	\newpage
-	\section{Rechtschreibfehler}
-		\begin{center}
-			\includegraphics[page=1, width=.85\textwidth]{pdf/test.pdf}		
-		\end{center}
-
-	\newpage		
-	\section{Pflichtenehft}
-		\input{include/pflichtenheft}
-		
-	\newpage
-	\section{Quellcode (Auszüge)}
-		\lstinputlisting[language=JavaScript, caption=Test.js]{code/test.js}
-
-
-\end{appendices}
-
-\clearpage
 \listoffigures
-\newpage
+\clearpage
 
 \listoftables
+\clearpage
+
+\abbrev{KIS}{Abteilung der GNS für Softwareentwicklung}
+\abbrev{GNS}{Gesellschaft für Nuklear-Service mbH}	
+\abbrev{Hosting}{Bereitstellen einer Web-Anwendung auf einem Web-Server}	
+\abbrev{CVS}{Concurrent Version System}	
+\printnomenclature		
+\clearpage
+
+
+
+\section{Einleitung}
+
+\subsection{Projektumfeld}
+\label{sec:projektumfeld}
+
+Die GNS (Gesellschaft für Nuklear-Service) mbH ist ein mittelständisches Unternehmen, das 1977 gegründet wurde und aktuell etwa 550 Mitarbeiter beschäftigt. Die Firmenzentrale befindet sich in Essen. Die GNS betreibt des weiteren Standorte in Duisburg, Mülheim an der Ruhr und Karlsruhe. Das Hauptgeschäftsfeld der GNS ist die Entwicklung sowie der Vertrieb von Behältern zur Lagerung und zum Transport von radioaktivem Material, als auch die Beladung solcher Behältnisse.
+
+
+Ebenfalls zum Geschäftsbereich der GNS zugehörig ist der Ver- und Betrieb von Softwarelösungen. Hier ist beispielhaft das AVK(Abfallfluss- Verfolgungs- und Produktkontroll-System) zu nennen, welches 1991 entwickelt wurde und heute in allen deutschen Kernkraftwerken verwendet wird.  Daneben werden von der GNS eine Vielzahl von stark spezialisierten Softwarelösungen betrieben, wovon viele als digitale Dienstleistung für Kunden (z.B. Kernkraftwerke und Zwischenlager) bereitgestellt werden. \\
+
+Auftraggeber des Projekts ''\Projekt'' ist die GNS, in Person Friedrich Bauriedel, Leiter der Abteilung KIS.
+
+
+
+\subsection{Projektziel}
+
+Ziel des Projekts ist, den regelmäßig anfallenden Arbeitsschritt ''Erstellen eines Benutzerhandbuch aus einem Wiki'' für die Mitarbeiter der GNS zu vereinfachen und zu beschleunigen. Ebenfalls soll der Workflow normiert und zentralisiert werden, sodass der Aufwand für vorlaufende Arbeiten minimiert wird.
+
+\subsection{Projektbegründung}
+\label{sec:projektbegründung}
+
+Wie in \ref{sec:projektumfeld} erwähnt betreibt die GNS eine Vielzahl an hoch spezialisierten Softwarelösung für diverse Kunden. Aufgrund der Komplexität vieler dieser Anwendungen ist es nötig den Benutzern ein Handbuch zur Verfügung zu stellen.
+Zu diesem Zweck betreibt die GNS betriebsinterne Wikis, in denen Inhalte bezüglich der korrekten Bedienung einer Anwendung von Mitarbeitern der GNS gepflegt werden. \\
+
+2012 wurde von der GNS der sogenannte WikiConverter entwickelt. Dies ist ein Tool, welches die Inhalte eines MediaWikis extrahiert und diese in ein PDF- bzw. ein HTML-Dokument konvertiert.
+Ziel der Entwicklung war es, die mithilfe des WikiConverters erzeugten Dateien als interaktive Hilfe in die jeweiligen Anwendungen einzubetten bzw. als Benutzerhandbuch den Kunden bereitstellen zu können.
+
+Allerdings wurde bei der Entwicklung des WikiConverters wenig Wert auf eine intuitive Benutzerführung gelegt, was dazu führte, dass die Bedienung von diesem äußerst komplex ist. \\
+
+Durch die in den letzten Jahren gesteigerte Anzahl der von der GNS betriebenen Softwarelösungen, sowie die stetige Verkürzung der Release-Intervalle dieser, ist der Arbeitsschritt ''Erstellen von Benutzerhandbüchern'' immer mehr in den Vordergrund gerückt, was schließlich dazu führte, dass eine Überarbeitung von diesem unumgänglich wurde. \\
+
+Zu diesem Zweck wurde von der Abteilung KIS Mitte 2015 das Projekt ''\Projekt'' initiiert, welches zum Ziel hat, die Erstellung von Benutzerhandbüchern zu vereinfachen und zu zentralisieren.
+
+Im Rahmen des Projekts wird eine Web-Anwendung entwickelt, welche die Kernfunktionalität des WikiConverters ummantelt und eine einheitliche, graphische Benutzerschnittstelle zu dieser anbietet. So wird die Komplexität des WikiConverters vor den Benutzern verborgen, um diesen eine einfachere und intuitivere Benutzung zu ermöglichen. \\
+
+Als messbares Ziel des Projekts ist eine Reduzierung der durchschnittlichen Arbeitszeit für den Workflow ''Erstellen eines Benutzerhandbuchs'' um mindestens 25\% veranschlagt.
+
+
+\subsection{Projektschnittstellen}
+
+Die technischen und sozialen Schnittstellen des Projekts sind ausschließlich betriebsinterner Natur. \\
+Technisch betrachtet greif das Projekt die bestehende Anwendung ''Wikiconverter'' auf und adaptiert dessen Kernfunktionalität. \\
+Aus projekt-spezifischer Sicht sind die Schnittstellen rein intern, da sowohl Auftraggeber als auch Endnutzer der Anwendung Mitarbeiter bzw. Abteilungen der GNS sind. \\
+Die Projektabschließende Abnahme erfolgt gegenüber dem Auftraggeber, hier die Abteilung KIS der GNS.
+
+
+\subsection{Projektabgrenzung}
+
+Ausdrücklich nicht Teil des Projekts ist das Hosting der im Rahmen des Projekts entwickelten Anwendung sowie alle in Verbindung mit dem Hosting stehenden administrativen Maßnahmen. Diese werden von nicht direkt am Projekt beteiligten Mitarbeitern der GNS durchgeführt.
+
+
+\section{Projektplanung}
+
+\subsection{Projektphasen}
+
+	\begin{table}[H]
+	\centering
+	\begin{tabular}{lr}
+
+		\rowcolor{MidnightBlue!15}				
+		\textbf{Projekphase} & \textbf{Geplante Zeit} \\\hline
+		
+	    Anforderungsanalyse & 7h \\	   	   
+	    Projektplanung & 4h \\	   			
+	    Software-Architektur & 14h \\	 				
+	    Implementierung & 26h \\	   				
+	    Projektabschluss & 3h \\	   				
+	    Sonstiges & 16h \\\hline
+	  		
+		\rowcolor{MidnightBlue!15}				
+		\textbf{Gesamt} & \textbf{70h}				
+			    
+	\end{tabular}
+	\caption{Projektphasen}
+	\label{tab:projektphasen}
+	\end{table}
+	
+	Eine detaillierte Übersicht der einzelnen Phasen findet sich im Anhang \ref{app:projektphasen_detail} auf Seite \pageref{app:projektphasen_detail}
+	
+
+\subsection{Abweichung vom Projektantrag}
+
+Abweichend vom Projektantrag werden das Pflichten- sowie das Lastenheft nur in Auszügen im Projektbericht aufgeführt. Dies geschieht aus dem Grund den Umfang des Projektbericht nicht übermäßig zu gestalten.
+
+\subsection{Resourcenplanung}
+
+Im Folgenden werden alle für die Durchführung des Projekts bezogenen Resourcen aufgelistet. Diese werden durch den Auftraggeber, hier die GNS, bereitgestellt.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ll}
+
+		\rowcolor{white!15}				
+		\textbf{Art der Resource} & \textbf{Beschreibung} \\\hline		
+		
+		\rowcolor{MidnightBlue!15}				
+		\textbf{Sachliche Resource} & \\
+		Projektbüro & \\
+		Computer & \\
+		\hspace{1.5em} IDE & Eclipse for JEE Developers \\
+		Demilitarisierte Zone & zu Testzwecken \\
+		
+		\rowcolor{MidnightBlue!15}			
+		\textbf{Personelle Resource} & \\
+		Projektleiter & Oliver Herrmann \\
+		Projektmitarbeiter & Oliver Herrmann \\
+	
+			    
+	\end{tabular}
+	\caption{Projektphasen}
+	\label{tab:projektphasen}
+	\end{table}
+
+\subsection{Entwicklungsprozess}
+
+Grundlage für den Entwicklungsprozess bildet das iterative Wasserfallmodell\footnote{\url{http://www.pi.informatik.tu-darmstadt.de/fileadmin/user_upload/Group_PI/LV__SE_RE/R_01_Wasserfallmodell__Ausarbeitung__Schwaiger.pdf} abgerufen am 05.10.2015}.
+Dies wurde vor allem gewählt, da es gut mit Projekten geringen bis mittleren Umfangs harmoniert. Andere Modelle wie z.B. Scrum oder Extreme-Programming wurden in erster Linie nicht gewählt, da diese die Projektarbeit in einem Team erfordern.
+
+\section{Analysephase}
+
+\subsection{Ist-Analyse}
+
+Der jetzige Stand bezüglich des Workflows ''Erstellen eines Benutzerhandbuch'' sieht vor, dass der ausführende Mitarbeiter den WikiConverter aus dem internen CVS auscheckt, im Quellcode angaben zu dem zu konvertierenden Wiki (URL, Hauptseite) ergänzt und den Quellcode anschließende kompiliert und ausführt. Das Ergebnis der Ausführung sind die generierten PDF- und HTML-Dateien.
+
+Das Projekt ''\Projekt'' sieht vor, den Workflow wie folgt zu definieren:
+\begin{itemize}
+	\item Der Benutzer loggt sich online in der Anwendung ein.
+	\item Der Benutzer wählt ein existierendes Wiki aus oder pflegt ein neues ein. (Nötige Angaben sind URL und Hauptseite des Wikis)
+	\item Der Benutzer kann über die graphische Oberfläche das Konvertieren starten.
+	\item Nach erfolgreicher Konvertierung kann der Benutzer die generierten Dateien herunter laden.
+\end{itemize}
+
+Außerdem werden aus Konvertierungsvorgängen erstellte Dateien dauerhaft gespeichert. Diese können ebenfalls vom Benutzer heruntergeladen werden, falls eine neue Konvertierung nicht benötigt wird.
+
+\subsection{Wirtschaftlichkeitsanalyse}
+
+Im folgenden wird die Wirtschaftlichkeit des Projekts betrachtet. Da das Projekt keinen direkten Gewinn erwirtschaftet sondern der monetäre Vorteil durch die Erleichterung der Arbeit der betroffenen Mitarbeiter erzielt wird, wird zuerst der Nutzen des Projekts messbar festgehalten. Dieser wird dann den Kosten des Projekts gegenübergestellt um eine qualifizierte Aussage über die Wirtschaftlichkeit des Projekt zu machen.
+
+Grundlage der Analyse sind folgende Stundensätze\footnote{Beruhend auf Schätzungen bzw. betriebsinternen Angaben}:
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lr}
+
+		\rowcolor{white!15}				
+		\textbf{Art der Beschäftigung} & \textbf{Stundensatz} \\\hline		
+		
+		Fachinformatiker & 30 \euro \\
+		Auszubildender & 7 \euro \\
+		Gemeinkosten & 10 \euro \\
+			    
+	\end{tabular}
+	\caption{Stundensätze}
+	\label{tab:stundensätze}
+\end{table}
+
+Hieraus ergibt sich ein \textit{effektiver} Stundensatz von 30 \euro{} für die Arbeit eines Fachinformatikers, bzw. 17 \euro{} für die Arbeits eines Auszubildenden (hier Projektmitarbeiter).
+
+
+\subsubsection{Nutzen des Projekts}
+\label{sec:nutzen_des_projekts}
+
+Der Nutzen des Projekts manifestiert sich primär darin, dass der regelmäßig auftretende Workflow ''Erstellen eines Benutzerhandbuchs'' beschleunigt wird.
+Da die exakte Bestimmung der durchschnittlich für diesen Workflow anfallenden Zeit von vielen, auch personellen, Faktoren abhängt, wird er für die Zwecke der Wirtschaftlichkeitsanalyse konservativ abgeschätzt. Diese Schätzung wird fortan als Grundlage für weitere Berechnungen herangezogen, um so ein Worst-Case Ergebnis ausdrücken zu können.
+Der aktuelle durchschnittliche zeitliche Aufwand für den Workflow ergibt sich aus
+\begin{itemize}
+	\item Einarbeitung in den Workflow und den WikiConverter im Allgemeinen
+	\item Auschecken der Quellen
+	\item Anpassungen am Quellcode
+	\item Kompilieren der Quellen
+	\item Ausführen der Anwendung
+	\item Sichern der Ergebnisse
+\end{itemize}
+und beträgt nach Schätzungen \textbf{8 Minuten}. \\
+
+Der neue, vom Projekt angestrebte Workflow setzt sich dagegen wie folgt zusammen \\
+
+Alternative 1
+\begin{itemize}
+	\item Login
+	\item Konvertierung anstoßen
+	\item herunterladen der Ergebnisse
+\end{itemize}
+Geschätze Dauer: 5 Minute. \\
+
+Alternative 2
+\begin{itemize}
+	\item Login
+	\item Auswählen eines bereits existierenden Ergebnisses
+	\item herunterladen der Ergebnisse
+\end{itemize}
+Geschätze Dauer: 2 Minuten. \\
+
+
+Hier ist anzumerken, dass durch die zentrale Speicherung der konvertierten Ergebnisse dem Nutzer ermöglicht wird, den zeitintensiven Schritt der Konvertierung auszulassen, wenn ein adäquates Ergebnis bereits existiert. Dies ist z.B dann der Fall, wenn die Konvertierung kürzlich durch einen dritten Mitarbeiter vorgenommen wurde und seit dem keine relevanten Änderungen am zu Grunde liegenden Wiki auftraten.
+
+Konservativ abgeschätzt wird davon ausgegangen, dass in 80\% der Fälle Alternative 1 und in den übrigen 20\% Alternative 2 eintreten wird.
+\begin{equation} \label{eq:1}
+	T_\emptyset = 0.8 * 5m + 0.2* 2m = 4.4m
+\end{equation}
+
+Aus Formel \ref{eq:1} ergibt sich eine durchschnittliche Dauer des Workflows von \textbf{4,4 Minuten}.
+
+
+
+\begin{equation} \label{eq:2}
+	T_\Delta = \frac{(8m-4,4m)}{8m} = 45\%
+\end{equation}
+
+Dies entspricht nach Formel \ref{eq:2} einer Einsparung von \textbf{45\%} und verspricht ein Einhalten des in Kapitel \ref{sec:projektbegründung} ausgesprochenen Ziels, die durchschnittliche Arbeitszeit des Workflows um mindestens mindestens 25\% zu reduzieren. \\
+
+\begin{equation} \label{eq:3}
+	K_{wöchtl} = 7,2m * \frac{1h}{60m} * \frac{40 \euro}{h} = 4,8 \euro
+\end{equation}
+
+Unter der Annahme, dass der Workflow durchschnittlich zweimal pro Woche durchgeführt wird ergibt sich daraus eine Zeitersparnis von 7,2m pro Woche, was nach Formel \ref{eq:3} einer wöchentlichen monetären Ersparnis von \textbf{4,8 \euro{}} entspricht.
+
+
+\subsubsection{Kosten des Projekts}
+\label{sec:kosten_des_projekts}
+
+Die Kosten des Projekts werden allein durch die Kosten der Entwicklung bestimmt. Es werden keine nicht bereits vorhandenen Ressourcen für das Projekt verwendet.
+\begin{equation} \label{eq:4}
+	K_{ges} = 70h * \frac{17 \euro}{h} = 1190 \euro
+\end{equation}
+Bei einem kalkulierten Projektumfang von 70 Stunden ergibt sich aus Formel \ref{eq:4} ein Kostenumfang von \textbf{1190 \euro{}}, unter der Voraussetzung, dass als Projektmitarbeiter ausschließlich Auszubildende eingesetzt werden.
+
+
+\subsubsection{Wirtschaftlichkeit des Projekts}
+Zieht man die Ergebnisse aus Kapitel \ref{sec:nutzen_des_projekts} und \ref{sec:kosten_des_projekts} heran und betrachtet diese relativ zueinander, lässt sich feststellen, dass sich das Projekt in etwa 5 Jahren armortisiert hat.
+
+
+\subsection{Risikoanalyse}
+
+Im folgenden wird eine Risikoanalyse und -auswertung durchgeführt.
+Eine detaillierte Übersicht der zugrunde liegenden Risikoanalyse findet sich im Anhang \ref{app:risikoanalyse} auf Seite \pageref{app:risikoanalyse}.
+
+\subsection{"Make or Buy"-Entscheidung}
+
+\subsection{Projektkosten}
+
+\subsection{Amortisationsdauer}
+
+\subsection{Nutzwertanalyse}
+
+\subsection{Anwendungsfälle}
+
+\subsection{Qalitätsanforderungen}
+
+\subsection{Lastenheft / Fachkonzept}
+
+\subsection{Zwischenstand}
+
+\section{Entwurfsphase}
+
+\subsection{Zielplattform}
+
+\subsection{Architekturdesign}
+
+\subsection{Entwurf der Benutzeroberfläche}
+
+\subsection{Datenmodell}
+
+\subsection{Geschäftslogik}
+
+\subsection{Maßnahmen zur Qualitätssicherung / Testkonzept}
+
+\subsection{Pflichtenheft / Datenverarbeitungskonzept}
+
+\subsection{Zwischenstand}
+
+\section{Implementierungsphase}
+
+	Hier erfolgen Details über die Implementierung
+
+\subsection{Implementierung der Datenstruckturen}
+
+\subsection{Implementierung des Backends}
+
+\subsection{Implementierung des Frontends}
+
+\subsection{Implementierung der Tests}
+
+\subsection{Zwischenstand}
+
+\section{Abnahmephase}
+	test
+
+\subsection{Zwischenstand}
+
+\section{Einführungsphase}
+
+\subsection{Zwischenstand}
+
+
+\section{Dokumentation}
+
+\subsection{Zwischenstand}
+
+\section{Fazit}
+
+\subsection{Soll- / Ist-Vergleich}
+
+\subsection{Lesson-Learned}
+
+\subsection{Ausblick}
+
 \newpage
+
+\input{appendix/APPENDIX}
 
 \end{document}
