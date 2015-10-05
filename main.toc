@@ -20,40 +20,43 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Kosten des Projekts}{12}{subsubsection.3.2.2}
 \contentsline {subsubsection}{\numberline {3.2.3}Wirtschaftlichkeit des Projekts}{13}{subsubsection.3.2.3}
 \contentsline {subsection}{\numberline {3.3}Risikoanalyse}{13}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}"Make or Buy"-Entscheidung}{13}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Projektkosten}{13}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Amortisationsdauer}{13}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Nutzwertanalyse}{13}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}Anwendungsf\IeC {\"a}lle}{13}{subsection.3.8}
-\contentsline {subsection}{\numberline {3.9}Qalit\IeC {\"a}tsanforderungen}{13}{subsection.3.9}
-\contentsline {subsection}{\numberline {3.10}Lastenheft / Fachkonzept}{13}{subsection.3.10}
-\contentsline {subsection}{\numberline {3.11}Zwischenstand}{13}{subsection.3.11}
-\contentsline {section}{\numberline {4}Entwurfsphase}{13}{section.4}
-\contentsline {subsection}{\numberline {4.1}Zielplattform}{13}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Architekturdesign}{13}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Entwurf der Benutzeroberfl\IeC {\"a}che}{13}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Datenmodell}{13}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Gesch\IeC {\"a}ftslogik}{13}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Ma\IeC {\ss }nahmen zur Qualit\IeC {\"a}tssicherung / Testkonzept}{13}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Pflichtenheft / Datenverarbeitungskonzept}{13}{subsection.4.7}
-\contentsline {subsection}{\numberline {4.8}Zwischenstand}{13}{subsection.4.8}
-\contentsline {section}{\numberline {5}Implementierungsphase}{13}{section.5}
-\contentsline {subsection}{\numberline {5.1}Implementierung der Datenstruckturen}{14}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Implementierung des Backends}{14}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Implementierung des Frontends}{14}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Implementierung der Tests}{14}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Zwischenstand}{14}{subsection.5.5}
-\contentsline {section}{\numberline {6}Abnahmephase}{14}{section.6}
-\contentsline {subsection}{\numberline {6.1}Zwischenstand}{14}{subsection.6.1}
-\contentsline {section}{\numberline {7}Einf\IeC {\"u}hrungsphase}{14}{section.7}
-\contentsline {subsection}{\numberline {7.1}Zwischenstand}{14}{subsection.7.1}
-\contentsline {section}{\numberline {8}Dokumentation}{14}{section.8}
-\contentsline {subsection}{\numberline {8.1}Zwischenstand}{14}{subsection.8.1}
-\contentsline {section}{\numberline {9}Fazit}{14}{section.9}
-\contentsline {subsection}{\numberline {9.1}Soll- / Ist-Vergleich}{14}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Lesson-Learned}{14}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Ausblick}{14}{subsection.9.3}
-\contentsline {section}{Anhang}{15}{section*.5}
+\contentsline {paragraph}{\nonumberline Gruppe 1}{13}{section*.5}
+\contentsline {paragraph}{\nonumberline Gruppe 2}{13}{section*.6}
+\contentsline {paragraph}{\nonumberline Gruppe 3}{13}{section*.7}
+\contentsline {subsection}{\numberline {3.4}"Make or Buy"-Entscheidung}{14}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Projektkosten}{14}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Amortisationsdauer}{14}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Nutzwertanalyse}{14}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Anwendungsf\IeC {\"a}lle}{14}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}Qalit\IeC {\"a}tsanforderungen}{14}{subsection.3.9}
+\contentsline {subsection}{\numberline {3.10}Lastenheft / Fachkonzept}{14}{subsection.3.10}
+\contentsline {subsection}{\numberline {3.11}Zwischenstand}{14}{subsection.3.11}
+\contentsline {section}{\numberline {4}Entwurfsphase}{14}{section.4}
+\contentsline {subsection}{\numberline {4.1}Zielplattform}{14}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Architekturdesign}{14}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Entwurf der Benutzeroberfl\IeC {\"a}che}{14}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Datenmodell}{14}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Gesch\IeC {\"a}ftslogik}{14}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Ma\IeC {\ss }nahmen zur Qualit\IeC {\"a}tssicherung / Testkonzept}{14}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Pflichtenheft / Datenverarbeitungskonzept}{14}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}Zwischenstand}{14}{subsection.4.8}
+\contentsline {section}{\numberline {5}Implementierungsphase}{14}{section.5}
+\contentsline {subsection}{\numberline {5.1}Implementierung der Datenstruckturen}{15}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Implementierung des Backends}{15}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Implementierung des Frontends}{15}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Implementierung der Tests}{15}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Zwischenstand}{15}{subsection.5.5}
+\contentsline {section}{\numberline {6}Abnahmephase}{15}{section.6}
+\contentsline {subsection}{\numberline {6.1}Zwischenstand}{15}{subsection.6.1}
+\contentsline {section}{\numberline {7}Einf\IeC {\"u}hrungsphase}{15}{section.7}
+\contentsline {subsection}{\numberline {7.1}Zwischenstand}{15}{subsection.7.1}
+\contentsline {section}{\numberline {8}Dokumentation}{15}{section.8}
+\contentsline {subsection}{\numberline {8.1}Zwischenstand}{15}{subsection.8.1}
+\contentsline {section}{\numberline {9}Fazit}{15}{section.9}
+\contentsline {subsection}{\numberline {9.1}Soll- / Ist-Vergleich}{15}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Lesson-Learned}{15}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Ausblick}{15}{subsection.9.3}
+\contentsline {section}{Anhang}{16}{section*.8}
 \setcounter {tocdepth}{1}
-\contentsline {section}{\numberline {A}Projektphasen}{15}{Anhang.1.A}
-\contentsline {section}{\numberline {B}Risikoanalyse}{16}{Anhang.1.B}
+\contentsline {section}{\numberline {A}Projektphasen}{16}{Anhang.1.A}
+\contentsline {section}{\numberline {B}Risikoanalyse}{17}{Anhang.1.B}
