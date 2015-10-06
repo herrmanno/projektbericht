@@ -1,0 +1,65 @@
+\label{app:nutzwertanalyse}
+
+\subsection{Backend-Architektur}
+
+Im Folgenden wird über eine Nutzwertanalyse die beste Backend-Architektur ausgewählt.
+Die hier betrachteten Alternativen sind die stärksten Ergebnisse einer vorangegangen Recherche. 
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lcccc}
+
+		\rowcolor{white!15}				
+		\textbf{Eigenschaft} 			& \textbf{Gewichtung}	& \textbf{JEE-Stack}	& \textbf{GNS-Framework} 	& \textbf{SrpingMVC} \\\hline		
+		
+		REST-Api integriert				& 3						& 5						& 0							& 4 \\
+		Trennung von Back- und Frontend	& 4						& 5						& 0							& 4 \\						
+		Dokumentation					& 2						& 3						& 1							& 5 \\
+		Testbarkeit						& 2						& 2						& 1							& 3 \\
+		Refactoring (ggf. durch Dritte)	& 3						& 3						& 4							& 2 \\
+		
+		\rowcolor{MidnightBlue!15}
+		\textbf{Gesamt}				& \textbf{14}			& \textbf{18}			& \textbf{6}				& \textbf{18} \\\hline
+		\rowcolor{white!15}				
+		\textbf{Nutzwert} 				& 						& \textbf{3,86}			& \textbf{1,14} 			& \textbf{3,57} \\
+											
+			    
+	\end{tabular}
+	
+	\caption{Detaillierte Nutzwertanalyse bezüglich der Backend-Architektur}
+	\label{tab:nutzwertanalyse_backend}
+\end{table}
+
+
+\subsection{Frontend-Architektur}
+
+Im Folgenden wird über eine Nutzwertanalyse die beste Frontend-Architektur ausgewählt.
+Die hier betrachteten Alternativen sind die stärksten Ergebnisse einer vorangegangen Recherche. 
+
+\begin{savenotes}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lccccc}
+
+		\rowcolor{white!15}				
+		\textbf{Eigenschaft}	& \textbf{Gewichtung}	& \textbf{JSF}	& \textbf{Angular}	& \textbf{kein Framework}	& \textbf{HorCrux\footnote{Ein von Oliver Herrmann entwickeltes TypeScript Framework, welches u.a. Web Components und Flux-Architektur beinhaltet.}} \\\hline		
+		
+		Bootstrap-Aufwand		& 2						& 3				& 3					& 5							& 2 \\
+		Modularität				& 4						& 4				& 3					& 1							& 5 \\						
+		Erweiterbarkeit			& 5						& 3				& 4					& 0 						& 5 \\
+		Dokumentation			& 2						& 3				& 5					& 4 						& 1 \\
+		User-Experience			& 4						& 3				& 5					& 2 						& 5 \\
+		Kompatibilität			& 2						& 4				& 2					& 5 						& 2 \\
+		
+		\rowcolor{MidnightBlue!15}
+		\textbf{Gesamt}			& \textbf{19}			& \textbf{20}	& \textbf{22}		& \textbf{17}				& \textbf{20} \\\hline
+		\rowcolor{white!15}				
+		\textbf{Nutzwert} 		& 						& \textbf{3,32}	& \textbf{3,79} 	& \textbf{2,11} 			& \textbf{3,95}\\
+											
+			    
+	\end{tabular}
+	
+	\caption{Detaillierte Nutzwertanalyse bezüglich der Front-Architektur}
+	\label{tab:nutzwertanalyse_frontend}
+\end{table}
+\end{savenotes}

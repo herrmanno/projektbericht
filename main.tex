@@ -13,6 +13,10 @@
 % benötigt für float angaben an tables, z.B. \begin{tyble}[H]
 \usepackage{float}
 
+% benötigt für \being{savenotes}, um fußnoten in tabellen zu verwenden
+\usepackage{footnote}
+
+
 % eurozeichen
 \usepackage{eurosym}
 \usepackage{textcomp}
@@ -183,6 +187,7 @@ Das Projekt ''\Projekt'' sieht vor, den Workflow wie folgt zu definieren:
 Außerdem werden aus Konvertierungsvorgängen erstellte Dateien dauerhaft gespeichert. Diese können ebenfalls vom Benutzer heruntergeladen werden, falls eine neue Konvertierung nicht benötigt wird.
 
 \subsection{Wirtschaftlichkeitsanalyse}
+\label{sec:wirtschaftlichkeitsanalyse}
 
 Im folgenden wird die Wirtschaftlichkeit des Projekts betrachtet. Da das Projekt keinen direkten Gewinn erwirtschaftet sondern der monetäre Vorteil durch die Erleichterung der Arbeit der betroffenen Mitarbeiter erzielt wird, wird zuerst der Nutzen des Projekts messbar festgehalten. Dieser wird dann den Kosten des Projekts gegenübergestellt um eine qualifizierte Aussage über die Wirtschaftlichkeit des Projekt zu machen.
 
@@ -282,10 +287,10 @@ Zieht man die Ergebnisse aus Kapitel \ref{sec:nutzen_des_projekts} und \ref{sec:
 
 \subsection{Risikoanalyse}
 
-Im folgenden wird eine Risikoanalyse und -auswertung durchgeführt.
-Eine detaillierte Übersicht der zugrunde liegenden Risikoanalyse findet sich im Anhang \ref{app:risikoanalyse} auf Seite \pageref{app:risikoanalyse}.
+Im folgenden wird eine Risikoanalyse und -bewertung durchgeführt.
+Eine detaillierte Übersicht der Risikobewertung findet sich im Anhang \ref{app:risikoanalyse} auf Seite \pageref{app:risikoanalyse}.
 
-Zusammenfassend lässt sich das Ergebnis der Risikoanalyse in drei Teilbereiche Gruppieren
+Zusammenfassend lässt sich das Ergebnis der Risikoanalyse in drei Teilbereiche gruppieren.
 
 \paragraph{Gruppe 1}
 Unvermeidbare Risiken \\
@@ -293,22 +298,118 @@ Hierzu zählen z.B. krankheitsbedingte personelle Ausfälle. Diese stellen ein u
 
 \paragraph{Gruppe 2}
 Bedingt vermeidbare Risiken \\
-Hierzu zählen vor allem Risiken aus Fehlern der Planung. Diese Risiken sind bedingt vermeidbar. Dem Auftreten solcher Risiken wird insbesondere durch ein Qualitätssicherungskonzept, welches wiederkehrende Zwischenstandsanalysen beinhaltet entgegengewirkt.
+Hierzu zählen vor allem Risiken aus Fehlern der Planung. Diese Risiken sind bedingt vermeidbar. Dem Auftreten solcher Risiken wird insbesondere durch die im  Qualitätssicherungskonzept vorgesehenen Zwischenstandsanalysen entgegengewirkt.
 
 \paragraph{Gruppe 3}
 Leicht vermeidbare Risiken \\
-Dies sind in erster Linie Risiken die in der Entwicklung auftreten können. Das Auftreten dieser Risiken wird in erster Linie durch die Erfahrung und intensive fachliche Vorbereitung der Projektmitarbeiter vermieden. Des weiteren hilft das im Qualitätssicherungskonzept beinhaltete Testkonzept hier für eine frühzeitige Erkennung von Konsequenzen dieser Risikogruppe.
+Dies sind in erster Linie Risiken die in der Entwicklung auftreten können. Das Eintreten dieser Risiken wird in erster Linie durch die Erfahrung und intensive fachliche Vorbereitung der Projektmitarbeiter vermieden. Des weiteren hilft das im Qualitätssicherungskonzept beinhaltete Testkonzept hier für eine frühzeitige Erkennung von Konsequenzen dieser Risikogruppe.
+
+
+Die möglichen Konsequenzen lassen sich wiederum in zwei Bereiche gruppieren.
+
+\paragraph{Gruppe A} Zeitliche Konsequenzen \\
+Dies sind Risikofolgen, welche in erster Linie eine Ausdehnung des Projektzeitraums bzw. eine Verzögerung des Projektabschlusses mit sich ziehen. Da das Projekt allerdings für rein betriebsinterne Zwecke konzipiert ist und keinen direkten Gewinn erwirtschaftet beschränken sich die negativen Auswirken dieser Gruppe auf ein Minimum. Dies hat zur Folge, dass Zeitliche Konsequenzen, sofern sie nicht in sehr hoher Quantität auftreten, nicht zum Abbruch des Projekts führen.
+
+\paragraph{Gruppe B} Finanzielle Konsequenzen \\
+Dies sind Risikofolgen, welche primär eine Erhöhung des monetären Aufwands des Projekts mit sich ziehen. Erzeugt werden diese Konsequenzen vor allem durch Verzögerungen im Projektablauf.
+
+Da das Projektbudget ausschließlich für die Beschäftigung der Projektmitarbeiter aufgewendet wird, ergibt sich dessen Betrag aus der geplanten Projektdauer. Dies hat zur Folge, dass finanzielle Konsequenzen direkt mit zeitlichen Konsequenzen gleichgesetzt werden können und daher, bei gemäßigten Auftreten, nicht zum Projektabbruch führen.
 
 
 \subsection{"Make or Buy"-Entscheidung}
 
+Im Folgenden wird abgewägt, ob sich das Projekt bezüglich Nutzen und Wirtschaftlichkeit gegenüber bereits existierenden Lösungen behauptet.
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lcc}
+
+		\rowcolor{white!15}				
+		\textbf{Alternative} & \textbf{Nutzen} & \textbf{Wirtschaftlichkeit} \\\hline		
+				
+		MediaWiki Erweiterung & $\ominus\ominus\ominus$ & $\ominus\ominus\ominus\ominus$ \\		
+		Erstellung der Anwendung durch Dienstleister & $\oplus\oplus$ & $\ominus\ominus\ominus$ \\		
+		Eigenständige Erstellung der Anwendung & $\oplus\oplus\oplus$ & $\ominus\ominus$ \\
+	
+			    
+	\end{tabular}
+	\caption{"Make or Buy"-Bewertung}
+	\label{tab:make_or_buy}
+\end{table}
+
+Eine detaillierte Übersicht der ''Make or Buy''-Bewertung findet sich im Anhang \ref{app:make_or_buy} auf Seite \pageref{app:make_or_buy}.
+
+
+Als Ergebnis der ''Make or Buy''-Analyse lässt sich festlegen, dass eine eigenständige Entwicklung der Anwendung aus wirtschaftlicher und nutzenorientierter Sicht die beste Alternative darstellt.
+
+
 \subsection{Projektkosten}
+
+Wie in Kapitel \ref{sec:kosten_des_projekts} bereits erläutert setzen sich die Kosten ausschließlich aus den Mitarbeiterkosten der Projektmitarbeiter zusammen. Da für das Projekt nur ein Mitarbeiter veranschlagt ist, sind die Kosten äquivalent zu der kalkulierten Dauer des Projekts.
+
+\begin{equation} \label{eq:5}
+	K_{ges} = T_{ges} * K_{proj_mitarbeiter} = 70h * \frac{17 \euro}{1h} = 1190 \euro
+\end{equation}
+
+Aus Formel \ref{eq:5} wird ersichtlich, dass sich die Gesamtkosten des Projekts auf \textbf{1190 \euro{}} belaufen.
+
+Eine detaillierte, nach Phasen unterteilte Übersicht der Kosten findet sich im Anhang \ref{app:kosten} auf Seite \pageref{app:kosten}
 
 \subsection{Amortisationsdauer}
 
+Siehe Kosten und Nutzen
+
 \subsection{Nutzwertanalyse}
 
+Für die entwicklungsrelevanten Bereiche ''Backend'' und ''Frontend'' werden jeweils Nutzwertanalysen durchgeführt, um im Vorhinein die optimale Architektur zu bestimmen.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ll}
+
+		\rowcolor{white!15}				
+		\textbf{Architekturbereich} & \textbf{beste Alternative} \\\hline		
+				
+		Backend & JEE-Stack \\
+		Frontend & HorCrux	\\	
+			    
+	\end{tabular}
+	\caption{Ergebnis der \nameref{app:nutzwertanalyse}}
+	\label{tab:nutzwertanalyse}
+\end{table}
+
+Die zugrunde liegenden Nutzweranalysen befinden sich im Anhang \ref{app:nutzwertanalyse} auf Seite \pageref{app:nutzwertanalyse}.
+
 \subsection{Anwendungsfälle}
+
+Die Anwendung deckt alle für den Workflow ''Erstellen eines Handbuchs'' relevanten Anwendungsfälle ab. Auch vor- und nachbereitende Anwendungsfälle werden von der Anwendung abgedeckt.
+
+Es folgt eine Auflistung aller relevanten Anwendungsfälle.
+
+\begin{enumerate}
+	\item vorgelagerte Anwendungsfälle
+	\begin{enumerate}
+		\item Anlegen eines Benutzers		
+		\item Login durch einen Benutzer
+		\item Anlegen eines neues Wikis	
+	\end{enumerate}
+	\item Hauptanwendungsfälle
+	\begin{enumerate}
+		\item Konvertieren eines Wikis \label{item:wiki_konvertieren}
+		\item Herunterladen eines Konvertierungsergebnisses
+		\item Bearbeiten eines Wikis \label{item:wiki_bearbeiten}
+	\end{enumerate}
+	\item nachgelagerte Anwendungsfälle
+	\begin{enumerate}
+		\item Löschen eines Benutzers
+		\item Löschen eines Wikis
+		\item Löschen eines eines Konvertierungsergebnisses
+	\end{enumerate}
+\end{enumerate}
+
+Zu den Anwendungsfällen \ref{item:wiki_konvertieren} und \ref{item:wiki_bearbeiten} finden sich im Anhang \ref{app:use_case_diagramm} auf Seite \pageref{app:use_case_diagramm} Use-Case-Diagramme, welche die Anwendungsfälle detailliert darstellen.
+
 
 \subsection{Qalitätsanforderungen}
 
