@@ -8,7 +8,11 @@
 		\nompageref{6}
   \item [{Hosting}]\begingroup Bereitstellen einer Web-Anwendung auf einem Web-Server\nomeqref {0}
 		\nompageref{6}
+  \item [{JSON}]\begingroup JavaScript Object Notation\nomeqref {0}
+		\nompageref{6}
   \item [{KIS}]\begingroup Abteilung der GNS für Softwareentwicklung\nomeqref {0}
+		\nompageref{6}
+  \item [{REST}]\begingroup Representational State Transfer\nomeqref {0}
 		\nompageref{6}
 
 \end{thenomenclature}
