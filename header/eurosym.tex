@@ -1,0 +1,7 @@
+% eurozeichen
+\usepackage{eurosym}
+\usepackage{textcomp}
+\usepackage{amstext} % for \text
+\DeclareRobustCommand{\officialeuro}{%
+  \ifmmode\expandafter\text\fi
+  {\fontencoding{U}\fontfamily{eurosym}\selectfont e}}

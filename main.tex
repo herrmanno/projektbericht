@@ -7,26 +7,6 @@
 \input{style/STYLE}
 
 
-% keine einrück für neue absätze
-\setlength{\parindent}{0pt}
-
-% benötigt für float angaben an tables, z.B. \begin{tyble}[H]
-\usepackage{float}
-
-% benötigt für \being{savenotes}, um fußnoten in tabellen zu verwenden
-\usepackage{footnote}
-
-
-% eurozeichen
-\usepackage{eurosym}
-\usepackage{textcomp}
-\usepackage{amstext} % for \text
-\DeclareRobustCommand{\officialeuro}{%
-  \ifmmode\expandafter\text\fi
-  {\fontencoding{U}\fontfamily{eurosym}\selectfont e}}
-
-% used for linebreaks in table cells
-\usepackage{pbox}
 
 \begin{document}
 
@@ -47,6 +27,8 @@
 \abbrev{GNS}{Gesellschaft für Nuklear-Service mbH}	
 \abbrev{Hosting}{Bereitstellen einer Web-Anwendung auf einem Web-Server}	
 \abbrev{CVS}{Concurrent Version System}	
+\abbrev{REST}{Representational State Transfer}	
+\abbrev{JSON}{JavaScript Object Notation}
 \printnomenclature		
 \clearpage
 
@@ -98,6 +80,7 @@ Die Projektabschließende Abnahme erfolgt gegenüber dem Auftraggeber, hier die 
 
 
 \subsection{Projektabgrenzung}
+\label{sec:projektabgrenzung}
 
 Ausdrücklich nicht Teil des Projekts ist das Hosting der im Rahmen des Projekts entwickelten Anwendung sowie alle in Verbindung mit dem Hosting stehenden administrativen Maßnahmen. Diese werden von nicht direkt am Projekt beteiligten Mitarbeitern der GNS durchgeführt.
 
@@ -110,7 +93,7 @@ Ausdrücklich nicht Teil des Projekts ist das Hosting der im Rahmen des Projekts
 	\centering
 	\begin{tabular}{lr}
 
-		\rowcolor{MidnightBlue!15}				
+		\rowcolor{white!15}				
 		\textbf{Projekphase} & \textbf{Geplante Zeit} \\\hline
 		
 	    Anforderungsanalyse & 7h \\	   	   
@@ -120,7 +103,7 @@ Ausdrücklich nicht Teil des Projekts ist das Hosting der im Rahmen des Projekts
 	    Projektabschluss & 3h \\	   				
 	    Sonstiges & 16h \\\hline
 	  		
-		\rowcolor{MidnightBlue!15}				
+		\rowcolor{white!15}				
 		\textbf{Gesamt} & \textbf{70h}				
 			    
 	\end{tabular}
@@ -360,6 +343,7 @@ Eine detaillierte, nach Phasen unterteilte Übersicht der Kosten findet sich im 
 Siehe Kosten und Nutzen
 
 \subsection{Nutzwertanalyse}
+\label{sec:nutzwertanalyse}
 
 Für die entwicklungsrelevanten Bereiche ''Backend'' und ''Frontend'' werden jeweils Nutzwertanalysen durchgeführt, um im Vorhinein die optimale Architektur zu bestimmen.
 
@@ -442,15 +426,144 @@ Eine detaillierte Übersicht der Qualitätsanforderungen findet sich im Anhang \
 
 \subsection{Lastenheft / Fachkonzept}
 
+Das Grobkonzept der Anwendung ist wie folgt beschrieben: \\
+
+''Die Anwendung ist eine Webapplikation, welche es dem Benutzer erlaubt den Inhalt eines 
+Wikis in eine PDF- bzw. HTML-Datei zu konvertieren und diese anschließend herunterzuladen.
+Dazu kann der Benutzer selbst neue Wikis einpflegen. Gespeicherte Wikis sowie konvertierte Inhalte können mit anderen Nutzern geteilt werden.'' \\
+
+Eine detaillierte Übersicht über die Zielbestimmungen, den Produkteinsatz und die Produktübersicht findet sich in Anhang \ref{app:lastenehft} auf Seite \pageref{app:lastenehft}.
+
+
 \subsection{Zwischenstand}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lccc}
+
+		\rowcolor{white!15}				
+		\textbf{Teilphase} & \textbf{Geplant} & \textbf{Tatsächlich} & \textbf{Differenz} \\\hline		
+		
+
+		Sichtung des Lastenhefts & 1h & 1h & \\	    
+	    Erstellen des Pflichtenhefts & 2h & 3h &  + 1h\\	    
+	    Wirtschaftlichkeitsanalyse & 1h & 2h & + 1h\\	     
+	    Risikoanalyse & 1h & 1h & \\	      
+	    ''Make or Buy'' Analyse & 1h & 1h & \\	    
+		Anwendungsfälle definieren & 1h & 1h & \\\hline
+
+		\rowcolor{white!15}				
+		\textbf{Gesamt} & \textbf{7h} & \textbf{9h} & \textbf{+ 2h} \\			
+
+	    
+	\end{tabular}
+	\caption{Zwischenstand nach der Analysephase}
+	\label{tab:zwischenstand_analysephase}
+	\end{table}
+
 
 \section{Entwurfsphase}
 
 \subsection{Zielplattform}
 
+Im folgenden wird dargelegt, aus welchen Gründen die gewählte Zielplattform anvisiert wird.
+
+\paragraph{Programmiersprache} JAVA, TypeScript \\
+Das Backend der Anwendung wird mit der Programmiersprache Java in Version 7 umgesetzt.
+Dies ist primär mit der bereits vorhandenen Erfahrung der Projektmitarbeiter begründet. Außerdem ist die bereits existierende Ziellaufzeitumgebung (s. \ref{par:zielplattform_server} für Java-Anwendungen ausgelegt.
+Für die Frontend-Programmierung wird TypeScript in Version 1.6 verwendet. Dies ist damit begründet, dass wie in Kapitel \ref{sec:nutzwertanalyse} beschrieben der Einsatz eines JavaScript-Frameworks anvisiert wird. Des weiteren bietet TypeScript im Gegensatz zu JavaScript umfassendere statische Typprüfungen. Dies erleichtert die Programmierung und verhindert spätere Laufzeitfehler.
+
+\paragraph{Application-Server} Tomcat \\
+Als Application-Server wird Tomcat in Version 7 eingesetzt. Dies liegt vor allem an dem leichtgewichtigen Umfang und den damit verbundenen geringen Installations- und Administrationsaufwand des Application-Servers. 
+
+\paragraph{Datenbank} MySQL \\
+Als Datenbanksystem wird MySQL verwendet. Dies ist in erster Linie mit der bereits vorhandenen Erfahrung der Projektmitarbeiter begründet.
+
+\paragraph{Server} ~\\
+\label{par:zielplattform_server}%
+Die spätere Laufzeitumgebung inklusive der Installation der Anwendung in dieser ist, wie in Kapitel \ref{sec:projektabgrenzung} beschrieben, zwar nicht Teil des Projekts, der Vollständigkeit halber ist hier allerdings in Kürze die vom Kunden bereitgestellt Server-Umgebung beschrieben.
+\begin{itemize}
+	\item Server mit ausreichen leistungsfähigem Intel / AMD Prozessor
+	\item ausreichend Arbeitsspeicher
+	\item Debian Linux Betriebssystem
+	\item MySQL Datenbankserver
+	\item Tomcat Application-Server	
+\end{itemize}
+
+
 \subsection{Architekturdesign}
 
+Im folgenden wird dargelegt, aus welchen Gründen die jeweilige Softwarearchitektur des Back- und Frontends gewählt wurde. Eine detaillierte Übersicht über die Wahl Architekturspezifischer Frameworks findet dagegen sich in Kapitel \ref{sec:nutzwertanalyse}. \\
+
+\subsubsection{Serverarchitektur}
+
+Als Grundlage der Serverarchitektur wird das
+REST-Prinzip\footnote{\url{http://www.infoq.com/articles/designing-restful-http-apps-roth}, abgerufen am 07.10.2015} 
+in Verbindung mit JSON als Datenformat gewählt. \\
+
+Daraus ergeben sich folgende Vorteile:
+
+\paragraph{Separation of Concerns}
+Der Server hat klar definierte und abgegrenzte Aufgabengebiete. Dazu zählen das Verwalten
+(CRUD\footnote{Create, Update, Read, Delete}) von persistenten Daten. Sowohl von solchen, die den Application-Lifecycle überleben (Datenbankeinträge), als auch von flüchtigen, wie etwa Session-Daten. Außerdem ist der Server für die Zugriffsbeschränkung auf die Daten zuständig.
+
+Nicht zu den Aufgaben des Servers gehören dagegen z.B. Oberflächen-Logik oder das halten des generellen Status einer Session.
+
+\paragraph{Applikationsübergreifende Schnittstelle}
+Aufgrund des des REST-Prinzips ist leicht möglich, Anwendungsdaten gegenüber dritten, anwendungsfremden Diensten bereitzustellen, um so den Nutzen der Anwendung langfristig zu sichern.
+
+\paragraph{Datenformat}
+Durch die Wahl von JSON als Datenformat entfällt zum einen eine clientseitige Konvertierung, da JSON in der JavaScript-Umgebung eines Browsers ein natives Datenformat darstellt. Zum anderen kann bei der serverseitigen Konvertierung der Daten auf vorhandene Bibliotheken, beispielsweise
+Jackson\footnote{\url{http://wiki.fasterxml.com/JacksonHome}, abgerufen am 07.10.2015}
+zurückgegriffen werden.
+
+\paragraph{Allgemein}
+Die Wahl der Architektur weißt in Verbindung mit der Programmiersprache Java den Vorteil auf, dass der JEE-Stack bereits Standardkomponenten für diese Anwendungsbereiche wie etwa
+JAX-RS\footnote{\url{https://jcp.org/en/jsr/detail?id=339}, abgerufen am 07.10.2015}
+aufweist.
+
+
+\subsubsection{Clientarchitektur}
+
+Clientseitig wird eine auf dem
+Flux\footnote{\url{https://facebook.github.io/flux/docs/overview.html}, abgerufen am 07.10.2015} Konzept basierende Model-View-Architektur verwendet. \\
+
+Diese weist folgende Vorteile auf:
+
+\paragraph{Trennung von Daten und Darstellung}
+Durch die strikte Trennung von Daten (repräsentiert durch zustandslose Stores) und deren Darstellung (zustandbehaftete Komponenten) werden Fehler in der Geschäft- und Oberflächenlogik vermieden. Der unidirektionale Datenfluß der Flux-Architektur verhindert außerdem konkurrierende Zugriffe auf Daten.
+
+\paragraph{Übersichtlichkeit}
+Die starke Modularisierung (Aufteilung in Stores, Actions und Komponenten) erhöht die Übersichtlichkeit und erleichtert langfristig die Analyse bzw. das Refactoring des Frontends.
+
+\paragraph{Erweiterbarkeit}
+Aufgrund der bereits erläuterten Modularisierung und der strikten Objektorientierung des Frontends ist eine leichte Erweiterbarkeit von diesem gewährleistet.
+
 \subsection{Entwurf der Benutzeroberfläche}
+
+Die Benutzeroberfläche wird mit den Techniken HTML in Version 5 und CSS in Version 3 realisiert. JavaScript in Version 5 wird zur Unterstützung und Verbesserung der User Experience Verwendung finden.
+
+\subsubsection{Visuelles Konzept}
+
+Die Benutzeroberfläche wird in einzelne Bereiche unterteilt, um dem Benutzer eine durchgehend gleichbleibende Grundstruktur zu bieten und so die Übersichtlichkeit der Anwendung zu maximieren.
+
+\paragraph{Layout}
+Zu diesem Zweck wird die Oberfläche in einen Header, welcher die Navigationsleiste, sowie Angaben zum aktuellen Status beherbergt, sowie einen Hauptbereich, welcher die statusabhängigen Formulare und Daten anzeigt unterteilt. Der Hauptbereich ist wiederum in Spalten und Zeilen (ja nach aktuellem Status) unterteilt, wobei die maximale Anzahl dieser Unterbereiche auf üblicherweise zwei bis drei beschränkt ist, um die Übersichtlichkeit zu gewährleisten.
+
+\paragraph{Design Grundlagen}
+Die Benutzeroberfläche wird nach den Grundlagen von
+Responsive Design\footnote{\url{http://alistapart.com/article/responsive-web-design}, abgerufen am 07.10.2015}
+entwickelt, um die Attraktivität und den Nutzwert der Anwendung für verschiedene Endgeräte wie z.B. Smartphones oder Tablets zu gewährleisten.
+
+\paragraph{Visuelle Richtlinien}
+
+Die Darstellung lehnt sich dabei zum einen an die Richtlinien von
+Material Design\footnote{\url{https://www.google.com/design/spec/material-design}, abgerufen am 07.10.2015} an, um einen modernen Gesamteindruck zu erzielen.
+Zum anderen orientiert sich das Farbschema der Oberfläche am Corporate Design des Auftraggebers.
+
+\subsubsection{Prototyp}
+Eine bildhafte Darstellung eines funktionslosen Prototypen, welcher die hier aufgeführten Visuellen Konzepte verdeutlichen soll findet sich in Anhang \ref{app:prototyp} auf Seite \pageref{app:prototyp}.
 
 \subsection{Datenmodell}
 

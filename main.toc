@@ -35,39 +35,59 @@
 \contentsline {subsection}{\numberline {3.11}Zwischenstand}{16}{subsection.3.11}
 \contentsline {section}{\numberline {4}Entwurfsphase}{16}{section.4}
 \contentsline {subsection}{\numberline {4.1}Zielplattform}{16}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Architekturdesign}{16}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Entwurf der Benutzeroberfl\IeC {\"a}che}{16}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Datenmodell}{16}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Gesch\IeC {\"a}ftslogik}{16}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Ma\IeC {\ss }nahmen zur Qualit\IeC {\"a}tssicherung / Testkonzept}{16}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Pflichtenheft / Datenverarbeitungskonzept}{16}{subsection.4.7}
-\contentsline {subsection}{\numberline {4.8}Zwischenstand}{16}{subsection.4.8}
-\contentsline {section}{\numberline {5}Implementierungsphase}{16}{section.5}
-\contentsline {subsection}{\numberline {5.1}Implementierung der Datenstruckturen}{17}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Implementierung des Backends}{17}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Implementierung des Frontends}{17}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Implementierung der Tests}{17}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Zwischenstand}{17}{subsection.5.5}
-\contentsline {section}{\numberline {6}Abnahmephase}{17}{section.6}
-\contentsline {subsection}{\numberline {6.1}Zwischenstand}{17}{subsection.6.1}
-\contentsline {section}{\numberline {7}Einf\IeC {\"u}hrungsphase}{17}{section.7}
-\contentsline {subsection}{\numberline {7.1}Zwischenstand}{17}{subsection.7.1}
-\contentsline {section}{\numberline {8}Dokumentation}{17}{section.8}
-\contentsline {subsection}{\numberline {8.1}Zwischenstand}{17}{subsection.8.1}
-\contentsline {section}{\numberline {9}Fazit}{17}{section.9}
-\contentsline {subsection}{\numberline {9.1}Soll- / Ist-Vergleich}{17}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Lesson-Learned}{17}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Ausblick}{17}{subsection.9.3}
-\contentsline {section}{Anhang}{18}{section*.10}
+\contentsline {paragraph}{\nonumberline Programmiersprache}{17}{section*.10}
+\contentsline {paragraph}{\nonumberline Application-Server}{17}{section*.11}
+\contentsline {paragraph}{\nonumberline Datenbank}{17}{section*.12}
+\contentsline {paragraph}{\nonumberline Server}{17}{section*.13}
+\contentsline {subsection}{\numberline {4.2}Architekturdesign}{17}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Serverarchitektur}{18}{subsubsection.4.2.1}
+\contentsline {paragraph}{\nonumberline Separation of Concerns}{18}{section*.14}
+\contentsline {paragraph}{\nonumberline Applikations\IeC {\"u}bergreifende Schnittstelle}{18}{section*.15}
+\contentsline {paragraph}{\nonumberline Datenformat}{18}{section*.16}
+\contentsline {paragraph}{\nonumberline Allgemein}{18}{section*.17}
+\contentsline {subsubsection}{\numberline {4.2.2}Clientarchitektur}{18}{subsubsection.4.2.2}
+\contentsline {paragraph}{\nonumberline Trennung von Daten und Darstellung}{19}{section*.18}
+\contentsline {paragraph}{\nonumberline \IeC {\"U}bersichtlichkeit}{19}{section*.19}
+\contentsline {paragraph}{\nonumberline Erweiterbarkeit}{19}{section*.20}
+\contentsline {subsection}{\numberline {4.3}Entwurf der Benutzeroberfl\IeC {\"a}che}{19}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Visuelles Konzept}{19}{subsubsection.4.3.1}
+\contentsline {paragraph}{\nonumberline Layout}{19}{section*.21}
+\contentsline {paragraph}{\nonumberline Design Grundlagen}{19}{section*.22}
+\contentsline {paragraph}{\nonumberline Visuelle Richtlinien}{19}{section*.23}
+\contentsline {subsubsection}{\numberline {4.3.2}Prototyp}{20}{subsubsection.4.3.2}
+\contentsline {subsection}{\numberline {4.4}Datenmodell}{20}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Gesch\IeC {\"a}ftslogik}{20}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Ma\IeC {\ss }nahmen zur Qualit\IeC {\"a}tssicherung / Testkonzept}{20}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Pflichtenheft / Datenverarbeitungskonzept}{20}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}Zwischenstand}{20}{subsection.4.8}
+\contentsline {section}{\numberline {5}Implementierungsphase}{20}{section.5}
+\contentsline {subsection}{\numberline {5.1}Implementierung der Datenstruckturen}{20}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Implementierung des Backends}{20}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Implementierung des Frontends}{20}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Implementierung der Tests}{20}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Zwischenstand}{20}{subsection.5.5}
+\contentsline {section}{\numberline {6}Abnahmephase}{20}{section.6}
+\contentsline {subsection}{\numberline {6.1}Zwischenstand}{21}{subsection.6.1}
+\contentsline {section}{\numberline {7}Einf\IeC {\"u}hrungsphase}{21}{section.7}
+\contentsline {subsection}{\numberline {7.1}Zwischenstand}{21}{subsection.7.1}
+\contentsline {section}{\numberline {8}Dokumentation}{21}{section.8}
+\contentsline {subsection}{\numberline {8.1}Zwischenstand}{21}{subsection.8.1}
+\contentsline {section}{\numberline {9}Fazit}{21}{section.9}
+\contentsline {subsection}{\numberline {9.1}Soll- / Ist-Vergleich}{21}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Lesson-Learned}{21}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Ausblick}{21}{subsection.9.3}
+\contentsline {section}{Anhang}{22}{section*.24}
 \setcounter {tocdepth}{1}
-\contentsline {section}{\numberline {A}Projektphasen}{18}{Anhang.1.A}
-\contentsline {section}{\numberline {B}Risikoanalyse}{19}{Anhang.1.B}
-\contentsline {section}{\numberline {C}''Make or Buy''-Bewertung}{21}{Anhang.1.C}
-\contentsline {section}{\numberline {D}Kosten\IeC {\"u}bersicht nach Projektphasen}{22}{Anhang.1.D}
-\contentsline {section}{\numberline {E}Nutzwertanalyse}{23}{Anhang.1.E}
-\contentsline {subsection}{\numberline {E.1}Backend-Architektur}{23}{subsection.1.E.1}
-\contentsline {subsection}{\numberline {E.2}Frontend-Architektur}{23}{subsection.1.E.2}
-\contentsline {section}{\numberline {F}Use-Case-Diagramme}{24}{Anhang.1.F}
-\contentsline {subsection}{\numberline {F.1}Wiki konvertieren}{24}{subsection.1.F.1}
-\contentsline {subsection}{\numberline {F.2}Wiki bearbeiten}{24}{subsection.1.F.2}
-\contentsline {section}{\numberline {G}Qualit\IeC {\"a}tsanforderungen (Auszuf aus Pflichtenheft)}{26}{Anhang.1.G}
+\contentsline {section}{\numberline {A}Projektphasen}{22}{Anhang.1.A}
+\contentsline {section}{\numberline {B}Risikoanalyse}{23}{Anhang.1.B}
+\contentsline {section}{\numberline {C}''Make or Buy''-Bewertung}{25}{Anhang.1.C}
+\contentsline {section}{\numberline {D}Kosten\IeC {\"u}bersicht nach Projektphasen}{26}{Anhang.1.D}
+\contentsline {section}{\numberline {E}Nutzwertanalyse}{27}{Anhang.1.E}
+\contentsline {subsection}{\numberline {E.1}Backend-Architektur}{27}{subsection.1.E.1}
+\contentsline {subsection}{\numberline {E.2}Frontend-Architektur}{27}{subsection.1.E.2}
+\contentsline {section}{\numberline {F}Use-Case-Diagramme}{28}{Anhang.1.F}
+\contentsline {subsection}{\numberline {F.1}Wiki konvertieren}{28}{subsection.1.F.1}
+\contentsline {subsection}{\numberline {F.2}Wiki bearbeiten}{28}{subsection.1.F.2}
+\contentsline {section}{\numberline {G}Qualit\IeC {\"a}tsanforderungen (Auszuf aus Pflichtenheft)}{30}{Anhang.1.G}
+\contentsline {section}{\numberline {H}Lastenheft (Auszug)}{31}{Anhang.1.H}
+\contentsline {section}{\numberline {I}Oberfl\IeC {\"a}chenprototyp}{33}{Anhang.1.I}
