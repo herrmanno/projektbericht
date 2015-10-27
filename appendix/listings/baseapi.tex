@@ -1,0 +1,32 @@
+\label{lst:baseapi}
+\begin{lstlisting}[language=java, caption=BaseApi.java]
+
+public class BaseApi<T extends BaseModel> {
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@Path("{id}")
+	public T getOne(@Context HttpServletRequest request, @PathParam("id") int id) {
+		EntityManager em = createEntityManager();
+		try {
+			beforeRetrieve(request);
+			beforeGetOne(request, id);
+			
+			T t = em.find(clazz, id);
+			
+			afterGetOne(request, t);
+			
+			return t;
+		} catch(WebApplicationException e) {
+			throw e;
+		} catch (Exception e) {
+			log(e);
+			throw new GeneralException(e);
+		} finally {
+			em.close();
+		}
+	}
+	
+	(...)
+
+\end{lstlisting}

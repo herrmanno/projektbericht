@@ -1,0 +1,88 @@
+\label{lst:databaseupdater}
+\begin{lstlisting}[language=java, caption=DataBaseUpdater.java]
+public class DatabaseUpdater {
+
+	private static Logger logger = Logger.getLogger(DatabaseUpdater.class);
+	
+	private String scriptPackage;
+	private String applicationName;
+	
+	public DatabaseUpdater(String scriptPackage, String applicationName) {
+		this.scriptPackage = scriptPackage;
+		this.applicationName = applicationName;		
+	}
+	
+	public void update(EntityManager em) {
+		EntityTransaction transaction = em.getTransaction();
+		transaction.begin();
+		
+		try {
+			this.checkIfVersionTableExists(em);
+			for(File script : this.getScripts()) {
+				this.executeSql(em, script);
+			}
+		} catch (Exception e) {
+			logger.error(e.getMessage(), e);
+			transaction.rollback();
+			return;
+		} 
+		
+		transaction.commit();
+		em.close();
+	}
+	
+	protected void checkIfVersionTableExists(EntityManager em) throws SQLException {
+		
+		java.sql.Connection conn = em.unwrap(java.sql.Connection.class);
+		conn.createStatement().executeUpdate(Version.getCreateScript());
+	}
+
+	protected void executeSql(EntityManager em, File file) throws SQLException {
+		Version version = em.find(Version.class, this.applicationName);
+		if(version == null) {
+			version = new Version();
+			version.name = this.applicationName;
+			version.version = 0;
+			em.persist(version);
+		}
+				
+		Integer fileVersion = getFileVersion(file);
+		
+		if(version.version >= fileVersion)
+			return;
+		
+		String sql = this.readFile(file);
+		logger.debug("Executing Sql: " + sql);
+		java.sql.Connection conn = em.unwrap(java.sql.Connection.class);
+		conn.createStatement().executeUpdate(sql);
+		
+		version.version = fileVersion;
+	}
+	
+	protected File[] getScripts() throws Exception {
+		String pkg = this.scriptPackage;
+		ClassLoader cl = Thread.currentThread().getContextClassLoader();
+		
+		Enumeration<URL> resources = cl.getResources(pkg.replace(".", "/"));
+		if(resources.hasMoreElements()) {
+			URL p = resources.nextElement();
+			File f_package = new File(p.toURI());
+			File[] files = f_package.listFiles();
+			
+			Arrays.sort(files, new Comparator<File>() {
+
+				@Override
+				public int compare(File f1, File f2) {
+					return getFileVersion(f1).compareTo(getFileVersion(f2));
+				}
+			});
+			
+			return files;
+		}
+		else
+			return new File[]{};
+		
+	}
+	
+	(...)
+\end{lstlisting}

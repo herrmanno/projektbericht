@@ -23,6 +23,9 @@
 \listoftables
 \clearpage
 
+\lstlistoflistings
+\clearpage
+
 \abbrev{KIS}{Abteilung der GNS für Softwareentwicklung}
 \abbrev{GNS}{Gesellschaft für Nuklear-Service mbH}	
 \abbrev{Hosting}{Bereitstellen einer Web-Anwendung auf einem Web-Server}	
@@ -122,6 +125,7 @@ Abweichend vom Projektantrag werden das Pflichten- sowie das Lastenheft nur in A
 
 Im Folgenden werden alle für die Durchführung des Projekts bezogenen Resourcen aufgelistet. Diese werden durch den Auftraggeber, hier die GNS, bereitgestellt.
 
+\begin{savenotes}
 \begin{table}[H]
 	\centering
 	\begin{tabular}{ll}
@@ -133,7 +137,7 @@ Im Folgenden werden alle für die Durchführung des Projekts bezogenen Resourcen
 		\textbf{Sachliche Resource} & \\
 		Projektbüro & \\
 		Computer & \\
-		\hspace{1.5em} IDE & Eclipse for JEE Developers \\
+		\hspace{1.5em} IDE & Eclipse for JEE Developers\footnote{\url{http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1}, abgerufen am 27.10.2015} \\
 		Demilitarisierte Zone & zu Testzwecken \\
 		
 		\rowcolor{MidnightBlue!15}			
@@ -145,7 +149,8 @@ Im Folgenden werden alle für die Durchführung des Projekts bezogenen Resourcen
 	\end{tabular}
 	\caption{Projektphasen}
 	\label{tab:projektphasen}
-	\end{table}
+\end{table}
+\end{savenotes}
 
 \subsection{Entwicklungsprozess}
 
@@ -566,30 +571,169 @@ Zum anderen orientiert sich das Farbschema der Oberfläche am Corporate Design d
 Eine bildhafte Darstellung eines funktionslosen Prototypen, welcher die hier aufgeführten Visuellen Konzepte verdeutlichen soll findet sich in Anhang \ref{app:prototyp} auf Seite \pageref{app:prototyp}.
 
 \subsection{Datenmodell}
+\label{sec:datenmodell}
 
 Das der Anwendung zugrunde liegenden Datenmodell wird in Form eines Entity-Relationship-Modells in Anhang \ref{app:erm} auf Seite \pageref{app:erm} dargestellt.
 
 \subsection{Geschäftslogik}
 
+Den Hauptprozess der Anwendung stellt das Erstellen von Handbüchern dar. Eine schematische Beschreibung von diesem findet sich in Anhang \ref{app:use_case_diagramm} auf Seite \pageref{app:use_case_diagramm} in Form eines Use-Case-Diagramms.
+
+Ein umfassenderer Überblick über den logischen Aufbau der Anwendung findet sich in Anhang \ref{app:komponentendiagramm} auf Seite \pageref{app:komponentendiagramm}.
+
 \subsection{Maßnahmen zur Qualitätssicherung / Testkonzept}
 
-\subsection{Pflichtenheft / Datenverarbeitungskonzept}
+Im Folgenden sind die qualitätssichernden Maßnahmen des Projekts beschrieben.
+
+\subsubsection*{Dokumentation}
+Um die Wartbarkeit der Anwendung zu erleichterten und langfristig zu gewährleisten werden die Quelltexte dokumentiert. Dies geschieht nach vorherrschenden Standards, speziell
+JavaDoc\footnote{\url{http://www.oracle.com/technetwork/articles/java/index-jsp-135444.html}, abgerufen am 27.10.2015}
+bzw.
+JsDoc\footnote{\url{http://usejsdoc.org/}, abgerufen am 27.10.2015}.
+
+Des weiteren werden Informationen bezüglich der Entwicklungsumgebung und -toolchain in readme-Dateien schriftlich festgehalten, um die Wartung durch Dritte zu vereinfachen.
+
+\subsubsection*{Tests}
+
+\paragraph{Automatisierte Tests}
+Für einzelne kritische Komponenten werden Unit-Tests implementiert. Diese helfen beim späteren Refactoring der Anwendung frühzeitig Fehler durch dieses zu erkennen.
+
+\paragraph{Manuelle Tests}
+Zur Feststellung der Fehlerfreiheit der Anwendungsoberfläche wird jedes Feature der Anwendung manuell,
+sprich durch händische Durchführung, getestet. Als Testumgebung werden aktuelle Versionen der populärsten Browser eingesetzt, hier Microsoft Internet Explorer, Mozilla Firefox und Google Chrome.
+
+\subsection{Pflichtenheft}
+Ein Auszug des im Rahmen der Entwurfsphase erstellten Pflichtenhefts findet sich in Anhang \ref{app:pflichtenheft} auf Seite \pageref{app:pflichtenheft}.
 
 \subsection{Zwischenstand}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lccc}
+
+		\rowcolor{white!15}				
+		\textbf{Teilphase} & \textbf{Geplant} & \textbf{Tatsächlich} & \textbf{Differenz} \\\hline		
+		
+
+		Erstellen des Projektplans & 2h & 2h & \\	    
+	    Erstellen des Qualitätssicherungskonzepts & 2h & 2h & \\	    
+	    Spezifizieren der Architektur-Grundlagen & 8h & 6h & - 2h\\	     
+	    Erstellen des Datenmodells & 4h & 3h & - 1h \\	      
+	    Erstellen des Testkonzepts & 2h & 2h & \\\hline
+
+		\rowcolor{white!15}				
+		\textbf{Gesamt} & \textbf{18h} & \textbf{15h} & \textbf{- 3h} \\			
+
+	    
+	\end{tabular}
+	\caption{Zwischenstand nach der Entwurfsphase}
+	\label{tab:zwischenstand_entwurfsphase}
+	\end{table}
 
 \section{Implementierungsphase}
 
-	Hier erfolgen Details über die Implementierung
+\subsection{Iterationsplanung}
 
-\subsection{Implementierung der Datenstruckturen}
+Der Implementierungsphase läuft die Erstellung eines Iterationsplans voraus. In diesem werden die einzelnen Teilschritte der Phase benannt, um den aktuellen Forstschritt der Entwicklung besser verifizieren zu können und die logischen Abhängigkeiten der Teilmodule zu verdeutlichen.
 
-\subsection{Implementierung des Backends}
+Der Iterationsplan findet sich in Anhang \ref{app:iterationsplan} auf Seite \pageref{app:iterationsplan}.
 
-\subsection{Implementierung des Frontends}
+\subsection{Implementierung der Datenstrukturen}
+
+Auf Basis des in Kapitel \ref{sec:datenmodell} beschriebenen Datenmodells wird die eigentliche Datenbank implementiert. Hierzu wird auf einem bestehenden MySQL-Server eine neue Datenbank und ein neuer Benutzer angelegt. Diesem werden daraufhin alle nötigen Privilegien gewährt.
+
+Anschließend wird mit Hilfe des Tools
+MySQL Workbench\footnote{\url{https://www.mysql.de/products/workbench/}, abgerufen am 27.10.2015} ein SQL-Skript erzeugt, welches die Erstellung des Datenmodells abbildet. Dieses Skript wird in einzelnen Abschnitte nach Tabellen unterteilt und innerhalb des Projekts in einzelnen Dateien abgelegt.
+
+
+Die Anwendung führt beim Start eine Prüfung des aktuellen Schemas durch und führt darauf basierend einzelne SQL-Skripte aus. Dadurch ist ein stets konsistentes Schema, auch bei späteren Änderungen des Datenmodells, gewährleistet. Des weiteren wird auf diesem Wege keine manuelle Konfiguration der Datenbanktabellen benötigt, wenn die Anwendung auf einem neuen System deployed wird.
+
+\subsection{Implementierung der Geschäftslogik}
+
+Die Entwicklung der Geschäftslogik erfolgt, wie bereits erwähnt, mit der Programmiersprache JAVA unter Zuhilfenahme der Entwicklungsumgebung Eclipse. Für die Verwaltung von Abhängigkeiten und Bibliotheken wird
+Apache Maven\footnote{\url{https://maven.apache.org/}, abgerufen am 27.10.2015}
+verwendet.
+
+Die Anwendung wird dabei in drei Teilmodule, namentlich ''Backend'', ''Konverter'' und ''Frontend'' unterteilt, wobei für jedes dieser Module ein eigenes Eclipseprojekt angelegt wird, um die Übersichtlichkeit während der Entwicklung zu erhöhen.
+
+Im Folgenden werden einzelnen Teile der Geschäftslogik und deren Implementierungsdetails erläutert.
+
+\subsubsection*{Hilfsfunktionalitäten}
+
+\paragraph*{Datenbankvalidierung}
+Zur Validierung des Datenbankschemas wird eine Klasse \\\texttt{DatabaseUpdater} implementiert. Diese liest die Version des Dantebankschemas anhand einer Versionstabelle (Die beim erststart auch durch die Klasse angelegt wird) aus und vergleicht diese mit den Verfügbaren SQL-Skripten der Anwendung. Neue Skripte werden daraufhin auf der Datenbank ausgeführt, um das Datenbankschema beim Start der Anwendung stets auf den aktuellsten Stand zu bringen.
+
+Ein Auszug der Klasse befindet sich Anhang \ref{lst:databaseupdater} auf Seite \pageref{lst:databaseupdater}.
+
+\paragraph*{Testdatengenerierung}
+Zur programmatischen Erstellung von Testdatensätzen wird eine Klasse \texttt{DataBaseSeeder} implementiert. Diese bietet die Funktionalität neue Testdatensätze zu erstellen, welche beim Anwendungsstart ausgeführt wird.
+
+\subsubsection*{Entitäten}
+
+Alle Entitäten des Datenmodells, die programmatisch editierbar sind, werden durch zugehörige Java-Beans abgebildet. Dieses Konzept folgt dem Standard von JPA. Um den Entwicklungsaufwand zu minimieren leiten alle Entitätsklassen von der Klasse \texttt{BaseModel} ab, welche Grundkonfiguration und Felder aller Tabellen beschreibt.
+
+\subsubsection*{REST-API}
+
+Für jeden Entitätsklasse wird eine zugehörige API-Klasse erstellt. Diese erzeugen jeweils die über HTTP ansprechbaren REST-Endpunkte und sind für die Ausführung aller Datenbankzugriffe zuständig. Alle API-Klassen leiten von der generischen Klasse \texttt{BaseAPI} ab. In dieser sind bereits eine Reihe an ansprechbaren Pfaden / Methoden implementiert, sodass spezielle API-Klassen nur entitätsspezifische Methoden umsetzen müssen.
+
+Ein Auszug der Klasse \texttt{BaseAPI} befindet sich Anhang \ref{lst:baseapi} auf Seite \pageref{lst:baseapi}.
+
+\subsubsection*{Konverter}
+
+Grundlage des Konverter Moduls ist der Quelltext des bereits bestehenden WikiConverters. Dieser wird dahingehend angepasst, dass die Konvertierung in einem eigenen Thread ausgeführt und angestoßen werden kann.
+
+\subsection{Implementierung der Benutzeroberfläche}
+
+Die Benutzeroberfläche der Anwendung wird in HTML implementiert.
+Layout und Optik der Oberfläche werden mit Hilfe von CSS beschrieben. 
+Unterstützend wird das Framework ''Horcrux'' zur Beschreibung komplexer GUI-Komponenten verwendet.
+
+\subsubsection*{Layout}
+
+Das Layout der Oberfläche wird im Wesentlichen durch die Anordnung einzelner Komponenten in Spalten und Zeilen festgelegt.
+Die Umsetzung erfolgt mit der CSS3 Spezifikation
+FlexBox\footnote{\url{http://www.w3.org/TR/css-flexbox-1/}, abgerufen am 27.10.2015} umgesetzt.
+
+Des Weiteren passt sich das Layout dynamisch an das Ausgabeformat an, um so eine effiziente Anordnung der einzelnen Komponenten auf verschiedenen Endgeräten zu gewährleisten. Dies wird mit Hilfe der CSS Spezifikation
+Media Queries\footnote{\url{http://www.w3.org/TR/mediaqueries-4/}, abgerufen am 27.10.2015} erreicht.
+
+\subsubsection*{Design}
+
+Das Farbdesign orientiert sich an betriebsinternen Richtlinien, um die Corporate Identity der GNS zu adaptieren.
+
+Das Design der einzelnen GUI-Komponenten orientiert sich in Zügen an Standards moderner (mobiler) Betriebssysteme, allen Voran Material Design, um einen modernen, vertrauten Gesamteindruck zu erzeugen.
 
 \subsection{Implementierung der Tests}
 
+Unit-TESTS!!! 
+GUI-TESTS(Mocha!?)!!!
+
 \subsection{Zwischenstand}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lccc}
+
+		\rowcolor{white!15}				
+		\textbf{Teilphase} & \textbf{Geplant} & \textbf{Tatsächlich} & \textbf{Differenz} \\\hline		
+		
+
+		Erstellen des Datenbanktabellen & 2h & 1h & - 1h\\	    
+	    Entwicklung des Backends & 7h & 10h & + 3h\\	    
+	    Entwicklung des Frontends & 9h & 20h & + 11h\\	     
+	    Dokumentation des Quellcodes & 2h & 1h & - 1h \\	      
+   	    Testing & 2h & 2h & \\
+   	    Soll-Ist-Vergleich & 2h & 1h & - 1h \\
+   	    Puffer für Korrekturen & 2h & - & - 2h\\\hline   	    	    	    
+
+		\rowcolor{white!15}				
+		\textbf{Gesamt} & \textbf{26h} & \textbf{35h} & \textbf{+ 9h} \\			
+
+	    
+	\end{tabular}
+	\caption{Zwischenstand nach der Entwurfsphase}
+	\label{tab:zwischenstand_entwurfsphase}
+	\end{table}
 
 \section{Abnahmephase}
 	test
