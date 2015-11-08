@@ -20,7 +20,7 @@
 \listoffigures
 \clearpage
 
-\listoftables
+ \listoftables
 \clearpage
 
 \lstlistoflistings
@@ -52,15 +52,15 @@ Auftraggeber des Projekts ''\Projekt'' ist die GNS, in Person Friedrich Bauriede
 
 \subsection{Projektziel}
 
-Ziel des Projekts ist, den regelmäßig anfallenden Arbeitsschritt ''Erstellen eines Benutzerhandbuch aus einem Wiki'' für die Mitarbeiter der GNS zu vereinfachen und zu beschleunigen. Ebenfalls soll der Workflow normiert und zentralisiert werden, sodass der Aufwand für vorlaufende Arbeiten minimiert wird.
+Ziel des Projekts ist, den regelmäßig anfallenden Arbeitsschritt ''Erstellen eines Benutzerhandbuchs aus einem Wiki'' für die Mitarbeiter der GNS zu vereinfachen und zu beschleunigen. Ebenfalls soll der Workflow normiert und zentralisiert werden, sodass der Aufwand für vorlaufende Arbeiten minimiert wird.
 
 \subsection{Projektbegründung}
 \label{sec:projektbegründung}
 
-Wie in \ref{sec:projektumfeld} erwähnt betreibt die GNS eine Vielzahl an hoch spezialisierten Softwarelösung für diverse Kunden. Aufgrund der Komplexität vieler dieser Anwendungen ist es nötig den Benutzern ein Handbuch zur Verfügung zu stellen.
+Wie in Abschnitt \ref{sec:projektumfeld} erwähnt betreibt die GNS eine Vielzahl an hoch spezialisierten Softwarelösungen für diverse Kunden. Aufgrund der Komplexität vieler dieser Anwendungen ist es nötig den Benutzern ein Handbuch zur Verfügung zu stellen.
 Zu diesem Zweck betreibt die GNS betriebsinterne Wikis, in denen Inhalte bezüglich der korrekten Bedienung einer Anwendung von Mitarbeitern der GNS gepflegt werden. \\
 
-2012 wurde von der GNS der sogenannte WikiConverter entwickelt. Dies ist ein Tool, welches die Inhalte eines MediaWikis extrahiert und diese in ein PDF- bzw. ein HTML-Dokument konvertiert.
+2012 wurde von der GNS der sogenannte ''WikiConverter'' entwickelt. Dies ist ein Tool, welches die Inhalte eines MediaWikis extrahiert und diese in ein PDF- bzw. HTML-Dokument konvertiert.
 Ziel der Entwicklung war es, die mithilfe des WikiConverters erzeugten Dateien als interaktive Hilfe in die jeweiligen Anwendungen einzubetten bzw. als Benutzerhandbuch den Kunden bereitstellen zu können.
 
 Allerdings wurde bei der Entwicklung des WikiConverters wenig Wert auf eine intuitive Benutzerführung gelegt, was dazu führte, dass die Bedienung von diesem äußerst komplex ist. \\
@@ -77,8 +77,8 @@ Als messbares Ziel des Projekts ist eine Reduzierung der durchschnittlichen Arbe
 \subsection{Projektschnittstellen}
 
 Die technischen und sozialen Schnittstellen des Projekts sind ausschließlich betriebsinterner Natur. \\
-Technisch betrachtet greif das Projekt die bestehende Anwendung ''Wikiconverter'' auf und adaptiert dessen Kernfunktionalität. \\
-Aus projekt-spezifischer Sicht sind die Schnittstellen rein intern, da sowohl Auftraggeber als auch Endnutzer der Anwendung Mitarbeiter bzw. Abteilungen der GNS sind. \\
+Technisch betrachtet greif das Projekt die bestehende Anwendung ''WikiConverter'' auf und adaptiert dessen Kernfunktionalität. \\
+Aus projektspezifischer Sicht sind die Schnittstellen rein intern, da sowohl Auftraggeber als auch Endnutzer der Anwendung Mitarbeiter bzw. Abteilungen der GNS sind. \\
 Die Projektabschließende Abnahme erfolgt gegenüber dem Auftraggeber, hier die Abteilung KIS der GNS.
 
 
@@ -147,21 +147,22 @@ Im Folgenden werden alle für die Durchführung des Projekts bezogenen Resourcen
 	
 			    
 	\end{tabular}
-	\caption{Projektphasen}
-	\label{tab:projektphasen}
+	\caption{Resourcen}
+	\label{tab:resourcen}
 \end{table}
 \end{savenotes}
 
 \subsection{Entwicklungsprozess}
 
-Grundlage für den Entwicklungsprozess bildet das iterative Wasserfallmodell\footnote{\url{http://www.pi.informatik.tu-darmstadt.de/fileadmin/user_upload/Group_PI/LV__SE_RE/R_01_Wasserfallmodell__Ausarbeitung__Schwaiger.pdf} abgerufen am 05.10.2015}.
-Dies wurde vor allem gewählt, da es gut mit Projekten geringen bis mittleren Umfangs harmoniert. Andere Modelle wie z.B. Scrum oder Extreme-Programming wurden in erster Linie nicht gewählt, da diese die Projektarbeit in einem Team erfordern.
+Grundlage für den Entwicklungsprozess bildet das iterative Wasserfallmodell
+\footnote{\url{http://www.pi.informatik.tu-darmstadt.de/fileadmin/user_upload/Group_PI/LV__SE_RE/R_01_Wasserfallmodell__Ausarbeitung__Schwaiger.pdf} abgerufen am 05.10.2015}.
+Dies wurde gewählt, da es gut mit Projekten geringen bis mittleren Umfangs harmoniert. Andere Modelle wie z.B. Scrum oder Extreme-Programming wurden nicht in Erwägung gezogen, da sie die Projektarbeit im Team erfordern.
 
 \section{Analysephase}
 
 \subsection{Ist-Analyse}
 
-Der jetzige Stand bezüglich des Workflows ''Erstellen eines Benutzerhandbuch'' sieht vor, dass der ausführende Mitarbeiter den WikiConverter aus dem internen CVS auscheckt, im Quellcode angaben zu dem zu konvertierenden Wiki (URL, Hauptseite) ergänzt und den Quellcode anschließende kompiliert und ausführt. Das Ergebnis der Ausführung sind die generierten PDF- und HTML-Dateien.
+Der jetzige Stand bezüglich des Workflows ''Erstellen eines Benutzerhandbuchs'' sieht vor, dass der ausführende Mitarbeiter den WikiConverter aus dem internen CVS auscheckt, im Quellcode angaben zu dem zu konvertierenden Wiki (URL, Hauptseite) ergänzt und den Quellcode anschließend kompiliert und ausführt. Das Ergebnis der Ausführung sind die generierten PDF- und HTML-Dateien.
 
 Das Projekt ''\Projekt'' sieht vor, den Workflow wie folgt zu definieren:
 \begin{itemize}
@@ -178,7 +179,7 @@ Außerdem werden aus Konvertierungsvorgängen erstellte Dateien dauerhaft gespei
 
 Im folgenden wird die Wirtschaftlichkeit des Projekts betrachtet. Da das Projekt keinen direkten Gewinn erwirtschaftet sondern der monetäre Vorteil durch die Erleichterung der Arbeit der betroffenen Mitarbeiter erzielt wird, wird zuerst der Nutzen des Projekts messbar festgehalten. Dieser wird dann den Kosten des Projekts gegenübergestellt um eine qualifizierte Aussage über die Wirtschaftlichkeit des Projekt zu machen.
 
-Grundlage der Analyse sind folgende Stundensätze\footnote{Beruhend auf Schätzungen bzw. betriebsinternen Angaben}:
+Grundlage der Analyse sind folgende Stundensätze\footnote{Beruhend auf Tarifverträgen bzw. betriebsinternen Angaben}:
 
 \begin{table}[H]
 	\centering
@@ -187,8 +188,8 @@ Grundlage der Analyse sind folgende Stundensätze\footnote{Beruhend auf Schätzu
 		\rowcolor{white!15}				
 		\textbf{Art der Beschäftigung} & \textbf{Stundensatz} \\\hline		
 		
-		Fachinformatiker & 30 \euro \\
-		Auszubildender & 7 \euro \\
+		Fachinformatiker & 20 \euro \\
+		Auszubildender & 6 \euro \\
 		Gemeinkosten & 10 \euro \\
 			    
 	\end{tabular}
@@ -196,7 +197,7 @@ Grundlage der Analyse sind folgende Stundensätze\footnote{Beruhend auf Schätzu
 	\label{tab:stundensätze}
 \end{table}
 
-Hieraus ergibt sich ein \textit{effektiver} Stundensatz von 30 \euro{} für die Arbeit eines Fachinformatikers, bzw. 17 \euro{} für die Arbeits eines Auszubildenden (hier Projektmitarbeiter).
+Hieraus ergibt sich ein \textit{effektiver} Stundensatz von 30 \euro{} für die Arbeit eines Fachinformatikers, bzw. 16 \euro{} für die Arbeit eines Auszubildenden (hier Projektmitarbeiter).
 
 
 \subsubsection{Nutzen des Projekts}
@@ -213,7 +214,7 @@ Der aktuelle durchschnittliche zeitliche Aufwand für den Workflow ergibt sich a
 	\item Ausführen der Anwendung
 	\item Sichern der Ergebnisse
 \end{itemize}
-und beträgt nach Schätzungen \textbf{8 Minuten}. \\
+und beträgt nach Schätzungen \textbf{15 Minuten}. \\
 
 Der neue, vom Projekt angestrebte Workflow setzt sich dagegen wie folgt zusammen \\
 
@@ -234,28 +235,35 @@ Alternative 2
 Geschätze Dauer: 2 Minuten. \\
 
 
-Hier ist anzumerken, dass durch die zentrale Speicherung der konvertierten Ergebnisse dem Nutzer ermöglicht wird, den zeitintensiven Schritt der Konvertierung auszulassen, wenn ein adäquates Ergebnis bereits existiert. Dies ist z.B dann der Fall, wenn die Konvertierung kürzlich durch einen dritten Mitarbeiter vorgenommen wurde und seit dem keine relevanten Änderungen am zu Grunde liegenden Wiki auftraten.
+Hier ist anzumerken, dass durch die zentrale Speicherung der konvertierten Ergebnisse dem Nutzer ermöglicht wird, den zeitintensiven Schritt der Konvertierung auszulassen, wenn ein adäquates Ergebnis bereits existiert. Dies ist z.B dann der Fall, wenn die Konvertierung kürzlich durch einen dritten Mitarbeiter vorgenommen wurde und seitdem keine relevanten Änderungen am zu Grunde liegenden Wiki auftraten.
 
 Konservativ abgeschätzt wird davon ausgegangen, dass in 80\% der Fälle Alternative 1 und in den übrigen 20\% Alternative 2 eintreten wird.
-\begin{equation} \label{eq:1}
+\begin{equation} \label{eq:t_workflow_durchschn}
 	T_\emptyset = 0.8 * 5m + 0.2* 2m = 4.4m
 \end{equation}
 
-Aus Formel \ref{eq:1} ergibt sich eine durchschnittliche Dauer des Workflows von \textbf{4,4 Minuten}.
+Aus Formel \ref{eq:t_workflow_durchschn} ergibt sich eine durchschnittliche Dauer des Workflows von \textbf{4,4 Minuten}.
 
 
-
-\begin{equation} \label{eq:2}
-	T_\Delta = \frac{(8m-4,4m)}{8m} = 45\%
+\begin{equation} \label{eq:t_workflow_delta_abs}
+	T_{\Delta abs} = 15m-4,4m = 10,6m
 \end{equation}
 
-Dies entspricht nach Formel \ref{eq:2} einer Einsparung von \textbf{45\%} und verspricht ein Einhalten des in Kapitel \ref{sec:projektbegründung} ausgesprochenen Ziels, die durchschnittliche Arbeitszeit des Workflows um mindestens mindestens 25\% zu reduzieren. \\
-
-\begin{equation} \label{eq:3}
-	K_{wöchtl} = 7,2m * \frac{1h}{60m} * \frac{40 \euro}{h} = 4,8 \euro
+\begin{equation} \label{eq:t_workflow_delta_rel}
+	T_{\Delta rel} = \frac{T_{\Delta abs}}{15m} = 71\%
 \end{equation}
 
-Unter der Annahme, dass der Workflow durchschnittlich zweimal pro Woche durchgeführt wird ergibt sich daraus eine Zeitersparnis von 7,2m pro Woche, was nach Formel \ref{eq:3} einer wöchentlichen monetären Ersparnis von \textbf{4,8 \euro{}} entspricht.
+Dies entspricht nach Formel \ref{eq:t_workflow_delta_rel} einer Einsparung von \textbf{71 \%} und verspricht ein Einhalten des in Kapitel \ref{sec:projektbegründung} ausgesprochenen Ziels, die durchschnittliche Arbeitszeit des Workflows um mindestens mindestens 25\% zu reduzieren. \\
+
+\begin{equation} \label{eq:t_workflow_delta_jahr}
+	T_{\Delta jahr} = T_{\Delta abs} * 10 * 12 = 1272m = 21,2h
+\end{equation}
+
+\begin{equation} \label{eq:k_workflow_jahr}
+	K_{jahr} = T_{\Delta jahr} *  \frac{30 \euro}{h} = 636 \euro
+\end{equation}
+
+Unter der Annahme, dass der Workflow durchschnittlich zehnmal pro Monat von einem Fachangestellten durchgeführt wird ergibt sich daraus eine Zeitersparnis von 21,2 Stunden pro Jahr, was nach Formel \ref{eq:k_workflow_jahr} einer jährlichen monetären Ersparnis von \textbf{636 \euro{}} entspricht.
 
 
 \subsubsection{Kosten des Projekts}
@@ -263,13 +271,9 @@ Unter der Annahme, dass der Workflow durchschnittlich zweimal pro Woche durchgef
 
 Die Kosten des Projekts werden allein durch die Kosten der Entwicklung bestimmt. Es werden keine nicht bereits vorhandenen Ressourcen für das Projekt verwendet.
 \begin{equation} \label{eq:4}
-	K_{ges} = 70h * \frac{17 \euro}{h} = 1190 \euro
+	K_{ges} = 70h * \frac{16 \euro}{h} = 1120 \euro
 \end{equation}
-Bei einem kalkulierten Projektumfang von 70 Stunden ergibt sich aus Formel \ref{eq:4} ein Kostenumfang von \textbf{1190 \euro{}}, unter der Voraussetzung, dass als Projektmitarbeiter ausschließlich Auszubildende eingesetzt werden.
-
-
-\subsubsection{Wirtschaftlichkeit des Projekts}
-Zieht man die Ergebnisse aus Kapitel \ref{sec:nutzen_des_projekts} und \ref{sec:kosten_des_projekts} heran und betrachtet diese relativ zueinander, lässt sich feststellen, dass sich das Projekt in etwa 5 Jahren armortisiert hat.
+Bei einem kalkulierten Projektumfang von 70 Stunden ergibt sich aus Formel \ref{eq:4} ein Kostenumfang von \textbf{1120 \euro{}}, unter der Voraussetzung, dass als Projektmitarbeiter ausschließlich Auszubildende eingesetzt werden.
 
 
 \subsection{Risikoanalyse}
@@ -289,8 +293,7 @@ Hierzu zählen vor allem Risiken aus Fehlern der Planung. Diese Risiken sind bed
 
 \paragraph{Gruppe 3}
 Leicht vermeidbare Risiken \\
-Dies sind in erster Linie Risiken die in der Entwicklung auftreten können. Das Eintreten dieser Risiken wird in erster Linie durch die Erfahrung und intensive fachliche Vorbereitung der Projektmitarbeiter vermieden. Des weiteren hilft das im Qualitätssicherungskonzept beinhaltete Testkonzept hier für eine frühzeitige Erkennung von Konsequenzen dieser Risikogruppe.
-
+Dies sind in erster Linie Risiken die in der Entwicklung auftreten können. Das Eintreten dieser Risiken wird in erster Linie durch die Erfahrung und intensive fachliche Vorbereitung der Projektmitarbeiter vermieden. Des weiteren hilft das im Qualitätssicherungskonzept beinhaltete Testkonzept hier für eine frühzeitige Erkennung von Konsequenzen dieser Risikogruppe. \\
 
 Die möglichen Konsequenzen lassen sich wiederum in zwei Bereiche gruppieren.
 
@@ -300,10 +303,10 @@ Dies sind Risikofolgen, welche in erster Linie eine Ausdehnung des Projektzeitra
 \paragraph{Gruppe B} Finanzielle Konsequenzen \\
 Dies sind Risikofolgen, welche primär eine Erhöhung des monetären Aufwands des Projekts mit sich ziehen. Erzeugt werden diese Konsequenzen vor allem durch Verzögerungen im Projektablauf.
 
-Da das Projektbudget ausschließlich für die Beschäftigung der Projektmitarbeiter aufgewendet wird, ergibt sich dessen Betrag aus der geplanten Projektdauer. Dies hat zur Folge, dass finanzielle Konsequenzen direkt mit zeitlichen Konsequenzen gleichgesetzt werden können und daher, bei gemäßigten Auftreten, nicht zum Projektabbruch führen.
+Da das Projektbudget ausschließlich für die Beschäftigung der Projektmitarbeiter aufgewendet wird, ergibt sich dessen Betrag aus der geplanten Projektdauer. Dies hat zur Folge, dass finanzielle Konsequenzen direkt mit zeitlichen Konsequenzen gleichgesetzt werden können und daher, bei gemäßigtem Auftreten, nicht zum Projektabbruch führen.
 
 
-\subsection{"Make or Buy"-Entscheidung}
+\subsection{''Make or Buy''-Bewertung}
 
 Im Folgenden wird abgewägt, ob sich das Projekt bezüglich Nutzen und Wirtschaftlichkeit gegenüber bereits existierenden Lösungen behauptet.
 
@@ -321,7 +324,7 @@ Im Folgenden wird abgewägt, ob sich das Projekt bezüglich Nutzen und Wirtschaf
 	
 			    
 	\end{tabular}
-	\caption{"Make or Buy"-Bewertung}
+	\caption{''Make or Buy''-Bewertung}
 	\label{tab:make_or_buy}
 \end{table}
 
@@ -333,19 +336,23 @@ Als Ergebnis der ''Make or Buy''-Analyse lässt sich festlegen, dass eine eigens
 
 \subsection{Projektkosten}
 
-Wie in Kapitel \ref{sec:kosten_des_projekts} bereits erläutert setzen sich die Kosten ausschließlich aus den Mitarbeiterkosten der Projektmitarbeiter zusammen. Da für das Projekt nur ein Mitarbeiter veranschlagt ist, sind die Kosten äquivalent zu der kalkulierten Dauer des Projekts.
+Wie in Kapitel \ref{sec:kosten_des_projekts} bereits erläutert, setzen sich die Kosten ausschließlich aus den Mitarbeiterkosten der Projektmitarbeiter zusammen. Da für das Projekt nur ein Mitarbeiter veranschlagt ist, sind die Kosten äquivalent zu der kalkulierten Dauer des Projekts.
 
-\begin{equation} \label{eq:5}
-	K_{ges} = T_{ges} * K_{proj_mitarbeiter} = 70h * \frac{17 \euro}{1h} = 1190 \euro
+\begin{equation} \label{eq:k_proj_gesamt}
+	K_{ges} = T_{ges} * K_{proj\_mitarbeiter} = 70h * \frac{16 \euro}{1h} = 1120 \euro
 \end{equation}
 
-Aus Formel \ref{eq:5} wird ersichtlich, dass sich die Gesamtkosten des Projekts auf \textbf{1190 \euro{}} belaufen.
+Aus Formel \ref{eq:k_proj_gesamt} wird ersichtlich, dass sich die Gesamtkosten des Projekts auf \textbf{1120 \euro{}} belaufen.
 
 Eine detaillierte, nach Phasen unterteilte Übersicht der Kosten findet sich im Anhang \ref{app:kosten} auf Seite \pageref{app:kosten}
 
 \subsection{Amortisationsdauer}
 
-Siehe Kosten und Nutzen
+\begin{equation} \label{eq:amort}
+	T_{amortisation} = \frac{1120 \euro}{636 \euro / 1a} = 1,76a
+\end{equation}
+
+Zieht man die Ergebnisse aus Kapitel \ref{sec:nutzen_des_projekts} und \ref{sec:kosten_des_projekts} heran und betrachtet diese relativ zueinander, wie in Formel \ref{eq:amort} geschehen, lässt sich feststellen, dass sich das Projekt nach etwa 1,8 Jahren amortisiert hat.
 
 \subsection{Nutzwertanalyse}
 \label{sec:nutzwertanalyse}
@@ -360,7 +367,7 @@ Für die entwicklungsrelevanten Bereiche ''Backend'' und ''Frontend'' werden jew
 		\textbf{Architekturbereich} & \textbf{beste Alternative} \\\hline		
 				
 		Backend & JEE-Stack \\
-		Frontend & HorCrux	\\	
+		Frontend & React	\\	
 			    
 	\end{tabular}
 	\caption{Ergebnis der \nameref{app:nutzwertanalyse}}
@@ -392,7 +399,7 @@ Es folgt eine Auflistung aller relevanten Anwendungsfälle.
 	\begin{enumerate}
 		\item Löschen eines Benutzers
 		\item Löschen eines Wikis
-		\item Löschen eines eines Konvertierungsergebnisses
+		\item Löschen eines Konvertierungsergebnisses
 	\end{enumerate}
 \end{enumerate}
 
@@ -476,7 +483,7 @@ Im folgenden wird dargelegt, aus welchen Gründen die gewählte Zielplattform an
 
 \paragraph{Programmiersprache} JAVA, TypeScript \\
 Das Backend der Anwendung wird mit der Programmiersprache Java in Version 7 umgesetzt.
-Dies ist primär mit der bereits vorhandenen Erfahrung der Projektmitarbeiter begründet. Außerdem ist die bereits existierende Ziellaufzeitumgebung (s. \ref{par:zielplattform_server} für Java-Anwendungen ausgelegt.
+Dies ist primär mit der bereits vorhandenen Erfahrung der Projektmitarbeiter begründet. Außerdem ist die bereits existierende Ziellaufzeitumgebung (s. \ref{par:zielplattform_server}) für Java-Anwendungen ausgelegt.
 Für die Frontend-Programmierung wird TypeScript in Version 1.6 verwendet. Dies ist damit begründet, dass wie in Kapitel \ref{sec:nutzwertanalyse} beschrieben der Einsatz eines JavaScript-Frameworks anvisiert wird. Des weiteren bietet TypeScript im Gegensatz zu JavaScript umfassendere statische Typprüfungen. Dies erleichtert die Programmierung und verhindert spätere Laufzeitfehler.
 
 \paragraph{Application-Server} Tomcat \\
@@ -494,6 +501,7 @@ Die spätere Laufzeitumgebung inklusive der Installation der Anwendung in dieser
 	\item Debian Linux Betriebssystem
 	\item MySQL Datenbankserver
 	\item Tomcat Application-Server	
+	\item Java Laufzeitumgebung in Version 7 oder höher
 \end{itemize}
 
 
@@ -516,11 +524,11 @@ Der Server hat klar definierte und abgegrenzte Aufgabengebiete. Dazu zählen das
 Nicht zu den Aufgaben des Servers gehören dagegen z.B. Oberflächen-Logik oder das halten des generellen Status einer Session.
 
 \paragraph{Applikationsübergreifende Schnittstelle}
-Aufgrund des des REST-Prinzips ist leicht möglich, Anwendungsdaten gegenüber dritten, anwendungsfremden Diensten bereitzustellen, um so den Nutzen der Anwendung langfristig zu sichern.
+Aufgrund des REST-Prinzips ist es leicht möglich, Anwendungsdaten gegenüber dritten, anwendungsfremden Diensten bereitzustellen, um so den Nutzen der Anwendung langfristig zu sichern.
 
 \paragraph{Datenformat}
 Durch die Wahl von JSON als Datenformat entfällt zum einen eine clientseitige Konvertierung, da JSON in der JavaScript-Umgebung eines Browsers ein natives Datenformat darstellt. Zum anderen kann bei der serverseitigen Konvertierung der Daten auf vorhandene Bibliotheken, beispielsweise
-Jackson\footnote{\url{http://wiki.fasterxml.com/JacksonHome}, abgerufen am 07.10.2015}
+Jackson\footnote{\url{http://wiki.fasterxml.com/JacksonHome}, abgerufen am 07.10.2015},
 zurückgegriffen werden.
 
 \paragraph{Allgemein}
@@ -547,7 +555,7 @@ Aufgrund der bereits erläuterten Modularisierung und der strikten Objektorienti
 
 \subsection{Entwurf der Benutzeroberfläche}
 
-Die Benutzeroberfläche wird mit den Techniken HTML in Version 5 und CSS in Version 3 realisiert. JavaScript in Version 5 wird zur Unterstützung und Verbesserung der User Experience Verwendung finden.
+Die Benutzeroberfläche wird mit den Techniken HTML in Version 5 und CSS in Version 3 realisiert. JavaScript in Version 5 wird zur Unterstützung und Verbesserung der User Experience Verwendung finden. Umgesetzt wird die Oberfläche mit Hilfe des Frameworks React.
 
 \subsubsection{Visuelles Konzept}
 
@@ -661,7 +669,7 @@ Im Folgenden werden einzelnen Teile der Geschäftslogik und deren Implementierun
 \subsubsection*{Hilfsfunktionalitäten}
 
 \paragraph*{Datenbankvalidierung}
-Zur Validierung des Datenbankschemas wird eine Klasse \\\texttt{DatabaseUpdater} implementiert. Diese liest die Version des Dantebankschemas anhand einer Versionstabelle (Die beim erststart auch durch die Klasse angelegt wird) aus und vergleicht diese mit den Verfügbaren SQL-Skripten der Anwendung. Neue Skripte werden daraufhin auf der Datenbank ausgeführt, um das Datenbankschema beim Start der Anwendung stets auf den aktuellsten Stand zu bringen.
+Zur Validierung des Datenbankschemas wird eine Klasse \\\texttt{DatabaseUpdater} implementiert. Diese liest die Version des Dantebankschemas anhand einer Versionstabelle (Die beim Erststart auch durch die Klasse angelegt wird) aus und vergleicht diese mit den Verfügbaren SQL-Skripten der Anwendung. Neue Skripte werden daraufhin auf der Datenbank ausgeführt, um das Datenbankschema beim Start der Anwendung stets auf den aktuellsten Stand zu bringen.
 
 Ein Auszug der Klasse befindet sich Anhang \ref{lst:databaseupdater} auf Seite \pageref{lst:databaseupdater}.
 
@@ -686,7 +694,7 @@ Grundlage des Konverter Moduls ist der Quelltext des bereits bestehenden WikiCon
 
 Die Benutzeroberfläche der Anwendung wird in HTML implementiert.
 Layout und Optik der Oberfläche werden mit Hilfe von CSS beschrieben. 
-Unterstützend wird das Framework ''Horcrux'' zur Beschreibung komplexer GUI-Komponenten verwendet.
+Unterstützend wird das Framework React zur Beschreibung komplexer GUI-Komponenten verwendet.
 
 \subsubsection*{Layout}
 
@@ -731,8 +739,8 @@ GUI-TESTS(Mocha!?)!!!
 
 	    
 	\end{tabular}
-	\caption{Zwischenstand nach der Entwurfsphase}
-	\label{tab:zwischenstand_entwurfsphase}
+	\caption{Zwischenstand nach der Implementierungsphase}
+	\label{tab:zwischenstand_implementierungsphase}
 	\end{table}
 
 \section{Abnahmephase}

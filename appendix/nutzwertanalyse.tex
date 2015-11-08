@@ -5,12 +5,16 @@
 Im Folgenden wird über eine Nutzwertanalyse die beste Backend-Architektur ausgewählt.
 Die hier betrachteten Alternativen sind die stärksten Ergebnisse einer vorangegangen Recherche. 
 
+\begin{savenotes}
 \begin{table}[H]
 	\centering
 	\begin{tabular}{lcccc}
 
 		\rowcolor{white!15}				
-		\textbf{Eigenschaft} 			& \textbf{Gewichtung}	& \textbf{JEE-Stack}	& \textbf{GNS-Framework} 	& \textbf{SrpingMVC} \\\hline		
+		\textbf{Eigenschaft} 			& \textbf{Gewichtung}
+			& \textbf{JEE-Stack\footnote{\url{http://www.oracle.com/technetwork/java/javaee/overview/index.html}, abgerufen am 08.11.2015}}
+			& \textbf{GNS-Framework\footnote{ein betriebsinternes Framework zur entwicklung von Webanwendungen}}
+			& \textbf{SrpingMVC\footnote{\url{https://spring.io}, abgerufen am 08.11.2015}} \\\hline		
 		
 		REST-Api integriert				& 3						& 5						& 0							& 4 \\
 		\pbox{4cm}{Trennung von \\ Back- und Frontend}	& 4						& 5						& 0							& 4 \\						
@@ -29,6 +33,7 @@ Die hier betrachteten Alternativen sind die stärksten Ergebnisse einer vorangeg
 	\caption{Detaillierte Nutzwertanalyse bezüglich der Backend-Architektur}
 	\label{tab:nutzwertanalyse_backend}
 \end{table}
+\end{savenotes}
 
 
 \subsection{Frontend-Architektur}
@@ -42,24 +47,28 @@ Die hier betrachteten Alternativen sind die stärksten Ergebnisse einer vorangeg
 	\begin{tabular}{lccccc}
 
 		\rowcolor{white!15}				
-		\textbf{Eigenschaft}	& \textbf{Gewichtung}	& \textbf{JSF}	& \textbf{Angular}	& \textbf{kein Framework}	& \textbf{HorCrux\footnote{Ein von Oliver Herrmann entwickeltes TypeScript Framework, welches u.a. Web Components und Flux-Architektur beinhaltet.}} \\\hline		
+		\textbf{Eigenschaft}	& \textbf{Gewichtung}
+			& \textbf{JSF\footnote{\url{http://www.oracle.com/technetwork/java/javaee/javaserverfaces-139869.html}, abgerufen am 08.11.2015}}
+			& \textbf{Angular\footnote{\url{https://angularjs.org}, abgerufen am 08.11.2015}}
+			& \textbf{kein Framework}
+			& \textbf{React\footnote{\url{https://facebook.github.io/react/}, abgerufen am 08.11.2015}} \\\hline		
 		
 		Bootstrap-Aufwand		& 2						& 3				& 3					& 5							& 2 \\
 		Modularität				& 4						& 4				& 3					& 1							& 5 \\						
 		Erweiterbarkeit			& 5						& 3				& 4					& 0 						& 5 \\
-		Dokumentation			& 2						& 3				& 5					& 4 						& 1 \\
+		Dokumentation			& 2						& 3				& 5					& 4 						& 4 \\
 		User-Experience			& 4						& 3				& 5					& 2 						& 5 \\
 		Kompatibilität			& 2						& 4				& 2					& 5 						& 2 \\
 		
 		\rowcolor{MidnightBlue!15}
 		\textbf{Gesamt}			& \textbf{19}			& \textbf{20}	& \textbf{22}		& \textbf{17}				& \textbf{20} \\\hline
 		\rowcolor{white!15}				
-		\textbf{Nutzwert} 		& 						& \textbf{3,32}	& \textbf{3,79} 	& \textbf{2,11} 			& \textbf{3,95}\\
+		\textbf{Nutzwert} 		& 						& \textbf{3,32}	& \textbf{3,79} 	& \textbf{2,11} 			& \textbf{4,26}\\
 											
 			    
 	\end{tabular}
 	
-	\caption{Detaillierte Nutzwertanalyse bezüglich der Front-Architektur}
+	\caption{Detaillierte Nutzwertanalyse bezüglich der Frontend-Architektur}
 	\label{tab:nutzwertanalyse_frontend}
 \end{table}
 \end{savenotes}
