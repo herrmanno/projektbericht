@@ -594,6 +594,7 @@ JsDoc\footnote{\url{http://usejsdoc.org/}, abgerufen am 27.10.2015}.
 Des weiteren werden Informationen bezüglich der Entwicklungsumgebung und -toolchain in readme-Dateien schriftlich festgehalten, um die Wartung durch Dritte zu vereinfachen.
 
 \subsubsection*{Tests}
+\label{sec:test:test}
 
 \paragraph{Automatisierte Tests}
 Für einzelne kritische Komponenten werden Unit-Tests implementiert. Diese helfen beim späteren Refactoring der Anwendung frühzeitig Fehler durch dieses zu erkennen.
@@ -705,8 +706,20 @@ Das Design der einzelnen GUI-Komponenten orientiert sich in Zügen an Standards 
 
 \subsection{Implementierung der Tests}
 
-Unit-TESTS!!! 
-GUI-TESTS(Mocha!?)!!!
+Wie in Kapitel \ref{sec:test:test} beschrieben, werden zur Sicherung der Softwarequalität diverse automatisierte Test entwickelt. Im Folgenden wird näher auf die Implementierung dieser eingegangen.
+
+\subsubsection*{Serverseitige Tests}
+JUnit!
+
+\subsubsection*{Clientseitige Tests}
+
+Die Funktionalität der clientseitigen Geschäftslogik wird mit Hilfe einer umfassenden Testsuite sichergestellt. Als Testframework kommt
+Jasmine\footnote{\url{http://jasmine.github.io/}, abgerufen am 28.10.2015}
+zum Einsatz.
+
+Die Tests sind so konzipiert, dass sie die natürliche Interaktion des Benutzers mit der graphischen Schnittstelle möglichst präzise nachbilden, um Fehler in der Oberfächenimplementierung frühzeitig aufzudecken.
+
+Da die Ausführung der Test und die Ausgabe derer Ergebnisse über einen Browser erfolgt wird von der expliziten Führung eines Testprotokolls abgesehen.
 
 \subsection{Zwischenstand}
 
