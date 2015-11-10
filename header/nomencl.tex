@@ -5,4 +5,16 @@
 \renewcommand{\nomlabel}[1]{#1 \dotfill}
 \setlength{\nomitemsep}{-\parsep}
 
+% einrückung for nomenclature
+\usepackage{xstring}
+\usepackage{xpatch}
+\patchcmd{\thenomenclature}
+  {\leftmargin\labelwidth}
+  {\leftmargin\labelwidth\itemindent 1em }
+  {}{}
+
+\newcommand{\nomenclheader}[1]{%
+  \item[\hspace*{-\itemindent}\normalfont\bfseries#1]}
+
+
 \makenomenclature 

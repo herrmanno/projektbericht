@@ -1,62 +1,67 @@
-\begin{appendices}
-% \renewcommand{\thesection}{\arabic{section}} %\Roman{section}
+% \begin{appendices}
+% \renewcommand{\thesection}{\arabic{section}}
+% \renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesection}{\Alph{subsection}}
 
-\addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+% \addtocontents{toc}{\protect\setcounter{tocdepth}{1}}
+\appendix
+\pagenumbering{roman}
+\section{Anhang}
 	
-	\section{Projektphasen}		
+	\subsection{Projektphasen}		
 		\input{appendix/projektphasen}
-		%\newpage
+		\newpage
 
-	\section{Risikoanalyse}		
+	\subsection{Risikoanalyse}		
 		\input{appendix/risikoanalyse}
-		%\newpage		
+		\newpage		
 		
-	\section{''Make or Buy''-Bewertung}		
+	\subsection{''Make or Buy''-Bewertung}		
 		\input{appendix/make_or_buy}
-		%\newpage
+		\newpage
 	
-	\section{Kostenübersicht nach Projektphasen}		
+	\subsection{Kostenübersicht nach Projektphasen}		
 		\input{appendix/kosten}
-		%\newpage
+		\newpage
 
-	\section{Nutzwertanalyse}		
+	\subsection{Nutzwertanalyse}		
 		\input{appendix/nutzwertanalyse}
-		%\newpage
+		\newpage
 		
-	\section{Use-Case Diagramme}		
+	\subsection{Use-Case Diagramme}		
 		\input{appendix/use_case}
-		%\newpage		
+		\newpage		
 		
-	\section{Qualitätsanforderungen (Auszuf aus Pflichtenheft)}		
+	\subsection{Qualitätsanforderungen (Auszuf aus Pflichtenheft)}		
 		\input{appendix/qualitaetsanforderungen}
-		%\newpage
+		\newpage
 		
-	\section{Lastenheft (Auszug)}
+	\subsection{Lastenheft (Auszug)}
 		\input{appendix/lastenheft}
-		%\newpage
+		\newpage
 		
-	\section{Oberflächenprototyp}
+	\subsection{Oberflächenprototyp}
 		\input{appendix/prototyp}
-		%\newpage
+		\newpage
 		
-	\section{Entity-Relationship-Modell}
+	\subsection{Entity-Relationship-Modell}
 		\input{appendix/erm}
-		%\newpage
+		\newpage
 		
-	\section{Komponentendiagramm}
+	\subsection{Komponentendiagramm}
 		\input{appendix/komponenten}
-		%\newpage
+		\newpage
 		
-	\section{Pflichtenheft (Auszug)}
+	\subsection{Pflichtenheft (Auszug)}
 		\input{appendix/pflichtenheft}
-		%\newpage
+		\newpage
 		
-	\section{Iterationsplan}
+	\subsection{Iterationsplan}
 		\input{appendix/iterationsplan}
-		%\newpage
+		\newpage
 		
-	\section{Listings}
+	\subsection{Listings}
 		\input{appendix/listings/LISTINGS}
-		%\newpage
+		\newpage
 		
-\end{appendices}
+% \end{appendices}

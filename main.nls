@@ -3,16 +3,16 @@
  \nomgroup{A}
 
   \item [{CVS}]\begingroup Concurrent Version System\nomeqref {0}
-		\nompageref{6}
+		\nompageref{4}
   \item [{GNS}]\begingroup Gesellschaft für Nuklear-Service mbH\nomeqref {0}
-		\nompageref{6}
+		\nompageref{4}
   \item [{Hosting}]\begingroup Bereitstellen einer Web-Anwendung auf einem Web-Server\nomeqref {0}
-		\nompageref{6}
+		\nompageref{4}
   \item [{JSON}]\begingroup JavaScript Object Notation\nomeqref {0}
-		\nompageref{6}
+		\nompageref{4}
   \item [{KIS}]\begingroup Abteilung der GNS für Softwareentwicklung\nomeqref {0}
-		\nompageref{6}
+		\nompageref{4}
   \item [{REST}]\begingroup Representational State Transfer\nomeqref {0}
-		\nompageref{6}
+		\nompageref{4}
 
 \end{thenomenclature}
