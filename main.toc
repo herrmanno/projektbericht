@@ -18,14 +18,13 @@
 \contentsline {subsection}{\numberline {3.2}Wirtschaftlichkeitsanalyse}{12}{subsection.3.2}
 \contentsline {subsubsection}{\numberline {3.2.1}Nutzen des Projekts}{13}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Kosten des Projekts}{14}{subsubsection.3.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}Wirtschaftlichkeit des Projekts}{15}{subsubsection.3.2.3}
 \contentsline {subsection}{\numberline {3.3}Risikoanalyse}{15}{subsection.3.3}
 \contentsline {paragraph}{\nonumberline Gruppe 1}{15}{section*.6}
 \contentsline {paragraph}{\nonumberline Gruppe 2}{15}{section*.7}
 \contentsline {paragraph}{\nonumberline Gruppe 3}{15}{section*.8}
 \contentsline {paragraph}{\nonumberline Gruppe A}{15}{section*.9}
 \contentsline {paragraph}{\nonumberline Gruppe B}{15}{section*.10}
-\contentsline {subsection}{\numberline {3.4}"Make or Buy"-Entscheidung}{16}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.4}''Make or Buy''-Bewertung}{16}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Projektkosten}{16}{subsection.3.5}
 \contentsline {subsection}{\numberline {3.6}Amortisationsdauer}{16}{subsection.3.6}
 \contentsline {subsection}{\numberline {3.7}Nutzwertanalyse}{16}{subsection.3.7}
@@ -79,23 +78,23 @@
 \contentsline {subsection}{\numberline {9.1}Soll- / Ist-Vergleich}{26}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}Lesson-Learned}{26}{subsection.9.2}
 \contentsline {subsection}{\numberline {9.3}Ausblick}{26}{subsection.9.3}
-\contentsline {section}{Anhang}{27}{section*.39}
+\contentsline {section}{Anhang}{27}{section*.38}
 \setcounter {tocdepth}{1}
 \contentsline {section}{\numberline {A}Projektphasen}{27}{Anhang.1.A}
-\contentsline {section}{\numberline {B}Risikoanalyse}{28}{Anhang.1.B}
-\contentsline {section}{\numberline {C}''Make or Buy''-Bewertung}{30}{Anhang.1.C}
-\contentsline {section}{\numberline {D}Kosten\IeC {\"u}bersicht nach Projektphasen}{31}{Anhang.1.D}
-\contentsline {section}{\numberline {E}Nutzwertanalyse}{32}{Anhang.1.E}
-\contentsline {subsection}{\numberline {E.1}Backend-Architektur}{32}{subsection.1.E.1}
-\contentsline {subsection}{\numberline {E.2}Frontend-Architektur}{32}{subsection.1.E.2}
-\contentsline {section}{\numberline {F}Use-Case-Diagramme}{33}{Anhang.1.F}
-\contentsline {subsection}{\numberline {F.1}Wiki konvertieren}{33}{subsection.1.F.1}
+\contentsline {section}{\numberline {B}Risikoanalyse}{27}{Anhang.1.B}
+\contentsline {section}{\numberline {C}''Make or Buy''-Bewertung}{29}{Anhang.1.C}
+\contentsline {section}{\numberline {D}Kosten\IeC {\"u}bersicht nach Projektphasen}{29}{Anhang.1.D}
+\contentsline {section}{\numberline {E}Nutzwertanalyse}{30}{Anhang.1.E}
+\contentsline {subsection}{\numberline {E.1}Backend-Architektur}{30}{subsection.1.E.1}
+\contentsline {subsection}{\numberline {E.2}Frontend-Architektur}{30}{subsection.1.E.2}
+\contentsline {section}{\numberline {F}Use-Case Diagramme}{32}{Anhang.1.F}
+\contentsline {subsection}{\numberline {F.1}Wiki konvertieren}{32}{subsection.1.F.1}
 \contentsline {subsection}{\numberline {F.2}Wiki bearbeiten}{33}{subsection.1.F.2}
-\contentsline {section}{\numberline {G}Qualit\IeC {\"a}tsanforderungen (Auszuf aus Pflichtenheft)}{35}{Anhang.1.G}
-\contentsline {section}{\numberline {H}Lastenheft (Auszug)}{36}{Anhang.1.H}
-\contentsline {section}{\numberline {I}Oberfl\IeC {\"a}chenprototyp}{38}{Anhang.1.I}
-\contentsline {section}{\numberline {J}Entity-Relationship-Modell}{40}{Anhang.1.J}
-\contentsline {section}{\numberline {K}Komponentendiagramm}{41}{Anhang.1.K}
-\contentsline {section}{\numberline {L}Pflichtenheft (Auszug)}{42}{Anhang.1.L}
-\contentsline {section}{\numberline {M}Iterationsplan}{43}{Anhang.1.M}
-\contentsline {section}{\numberline {N}Listings}{44}{Anhang.1.N}
+\contentsline {section}{\numberline {G}Qualit\IeC {\"a}tsanforderungen (Auszuf aus Pflichtenheft)}{34}{Anhang.1.G}
+\contentsline {section}{\numberline {H}Lastenheft (Auszug)}{35}{Anhang.1.H}
+\contentsline {section}{\numberline {I}Oberfl\IeC {\"a}chenprototyp}{36}{Anhang.1.I}
+\contentsline {section}{\numberline {J}Entity-Relationship-Modell}{38}{Anhang.1.J}
+\contentsline {section}{\numberline {K}Komponentendiagramm}{39}{Anhang.1.K}
+\contentsline {section}{\numberline {L}Pflichtenheft (Auszug)}{39}{Anhang.1.L}
+\contentsline {section}{\numberline {M}Iterationsplan}{40}{Anhang.1.M}
+\contentsline {section}{\numberline {N}Listings}{41}{Anhang.1.N}
