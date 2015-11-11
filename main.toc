@@ -29,7 +29,7 @@
 \contentsline {subsection}{\numberline {3.4}''Make or Buy''-Bewertung}{13}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Nutzwertanalyse}{14}{subsection.3.5}
 \contentsline {subsection}{\numberline {3.6}Anwendungsf\IeC {\"a}lle}{14}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Qalit\IeC {\"a}tsanforderungen}{15}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.7}Qualit\IeC {\"a}tsanforderungen}{15}{subsection.3.7}
 \contentsline {subsection}{\numberline {3.8}Lastenheft / Fachkonzept}{15}{subsection.3.8}
 \contentsline {subsection}{\numberline {3.9}Zwischenstand}{15}{subsection.3.9}
 \contentsline {section}{\numberline {4}Entwurfsphase}{16}{section.4}
