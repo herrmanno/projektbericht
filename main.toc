@@ -81,22 +81,22 @@
 \contentsline {subsection}{\numberline {9.1}Soll- / Ist-Vergleich}{25}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}Lessons-Learned}{25}{subsection.9.2}
 \contentsline {subsection}{\numberline {9.3}Ausblick}{26}{subsection.9.3}
-\contentsline {section}{\numberline {A}Anhang}{i}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}Projektphasen}{i}{subsection.A.1}
-\contentsline {subsection}{\numberline {A.2}Risikoanalyse}{ii}{subsection.A.2}
-\contentsline {subsection}{\numberline {A.3}''Make or Buy''-Bewertung}{iv}{subsection.A.3}
-\contentsline {subsection}{\numberline {A.4}Kosten\IeC {\"u}bersicht nach Projektphasen}{v}{subsection.A.4}
-\contentsline {subsection}{\numberline {A.5}Nutzwertanalyse}{vi}{subsection.A.5}
-\contentsline {subsubsection}{\numberline {A.5.1}Backend-Architektur}{vi}{subsubsection.A.5.1}
-\contentsline {subsubsection}{\numberline {A.5.2}Frontend-Architektur}{vi}{subsubsection.A.5.2}
-\contentsline {subsection}{\numberline {A.6}Use-Case Diagramme}{vii}{subsection.A.6}
-\contentsline {subsubsection}{\numberline {A.6.1}Wiki konvertieren}{vii}{subsubsection.A.6.1}
-\contentsline {subsubsection}{\numberline {A.6.2}Wiki bearbeiten}{viii}{subsubsection.A.6.2}
-\contentsline {subsection}{\numberline {A.7}Qualit\IeC {\"a}tsanforderungen (Auszug aus Pflichtenheft)}{ix}{subsection.A.7}
-\contentsline {subsection}{\numberline {A.8}Lastenheft (Auszug)}{x}{subsection.A.8}
-\contentsline {subsection}{\numberline {A.9}Oberfl\IeC {\"a}chenprototyp}{xii}{subsection.A.9}
-\contentsline {subsection}{\numberline {A.10}Entity-Relationship-Modell}{xiv}{subsection.A.10}
-\contentsline {subsection}{\numberline {A.11}Komponentendiagramm}{xv}{subsection.A.11}
-\contentsline {subsection}{\numberline {A.12}Pflichtenheft (Auszug)}{xvi}{subsection.A.12}
-\contentsline {subsection}{\numberline {A.13}Iterationsplan}{xvii}{subsection.A.13}
-\contentsline {subsection}{\numberline {A.14}Listings}{xviii}{subsection.A.14}
+\contentsline {section}{\numberline {A}Anhang}{I}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Projektphasen}{I}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}Risikoanalyse}{II}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}''Make or Buy''-Bewertung}{IV}{subsection.A.3}
+\contentsline {subsection}{\numberline {A.4}Kosten\IeC {\"u}bersicht nach Projektphasen}{V}{subsection.A.4}
+\contentsline {subsection}{\numberline {A.5}Nutzwertanalyse}{VI}{subsection.A.5}
+\contentsline {subsubsection}{\numberline {A.5.1}Backend-Architektur}{VI}{subsubsection.A.5.1}
+\contentsline {subsubsection}{\numberline {A.5.2}Frontend-Architektur}{VI}{subsubsection.A.5.2}
+\contentsline {subsection}{\numberline {A.6}Use-Case Diagramme}{VII}{subsection.A.6}
+\contentsline {subsubsection}{\numberline {A.6.1}Wiki konvertieren}{VII}{subsubsection.A.6.1}
+\contentsline {subsubsection}{\numberline {A.6.2}Wiki bearbeiten}{VIII}{subsubsection.A.6.2}
+\contentsline {subsection}{\numberline {A.7}Qualit\IeC {\"a}tsanforderungen (Auszug aus Pflichtenheft)}{IX}{subsection.A.7}
+\contentsline {subsection}{\numberline {A.8}Lastenheft (Auszug)}{X}{subsection.A.8}
+\contentsline {subsection}{\numberline {A.9}Oberfl\IeC {\"a}chenprototyp}{XII}{subsection.A.9}
+\contentsline {subsection}{\numberline {A.10}Entity-Relationship-Modell}{XIV}{subsection.A.10}
+\contentsline {subsection}{\numberline {A.11}Komponentendiagramm}{XV}{subsection.A.11}
+\contentsline {subsection}{\numberline {A.12}Pflichtenheft (Auszug)}{XVI}{subsection.A.12}
+\contentsline {subsection}{\numberline {A.13}Iterationsplan}{XVII}{subsection.A.13}
+\contentsline {subsection}{\numberline {A.14}Listings}{XVIII}{subsection.A.14}
