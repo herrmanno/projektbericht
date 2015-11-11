@@ -2,17 +2,31 @@
 
  \nomgroup{A}
 
+  \item [{API}]\begingroup Application Programming Interface\nomeqref {0}
+		\nompageref{5}
+  \item [{CSS}]\begingroup Cascading Style Sheets\nomeqref {0}
+		\nompageref{5}
   \item [{CVS}]\begingroup Concurrent Version System\nomeqref {0}
-		\nompageref{4}
+		\nompageref{5}
   \item [{GNS}]\begingroup Gesellschaft für Nuklear-Service mbH\nomeqref {0}
-		\nompageref{4}
+		\nompageref{5}
+  \item [{GUI}]\begingroup Graphical User Interface\nomeqref {0}
+		\nompageref{5}
   \item [{Hosting}]\begingroup Bereitstellen einer Web-Anwendung auf einem Web-Server\nomeqref {0}
-		\nompageref{4}
+		\nompageref{5}
+  \item [{HTML}]\begingroup Hypertext Markup Language\nomeqref {0}
+		\nompageref{5}
+  \item [{HTTP}]\begingroup Hypertext Transfer Protocol\nomeqref {0}
+		\nompageref{5}
+  \item [{JEE}]\begingroup Java Platform, Enterprise Edition\nomeqref {0}
+		\nompageref{5}
   \item [{JSON}]\begingroup JavaScript Object Notation\nomeqref {0}
-		\nompageref{4}
+		\nompageref{5}
   \item [{KIS}]\begingroup Abteilung der GNS für Softwareentwicklung\nomeqref {0}
-		\nompageref{4}
+		\nompageref{5}
   \item [{REST}]\begingroup Representational State Transfer\nomeqref {0}
-		\nompageref{4}
+		\nompageref{5}
+  \item [{URL}]\begingroup Uniform Resource Locator\nomeqref {0}
+		\nompageref{5}
 
 \end{thenomenclature}

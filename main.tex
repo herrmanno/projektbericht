@@ -8,14 +8,20 @@
 
 \input{include/zeiten}
 
+
 \begin{document}
 
 
 \input{include/title}
 \clearpage
 
+% Letzter parameter ist numbering width in ToC
+\makeatletter
+  \renewcommand\l@subsection{\@dottedtocline{2}{1.5em}{2.8em}}
+\makeatother
 \addcontentsline{toc}{section}{Inhaltsverzeichnis}
 \tableofcontents
+
 % \clearpage
 
 \listoffigures
@@ -33,6 +39,13 @@
 \abbrev{CVS}{Concurrent Version System}	
 \abbrev{REST}{Representational State Transfer}	
 \abbrev{JSON}{JavaScript Object Notation}
+\abbrev{HTTP}{Hypertext Transfer Protocol}
+\abbrev{HTML}{Hypertext Markup Language}
+\abbrev{CSS}{Cascading Style Sheets}
+\abbrev{URL}{Uniform Resource Locator}
+\abbrev{JEE}{Java Platform, Enterprise Edition}
+\abbrev{API}{Application Programming Interface}
+\abbrev{GUI}{Graphical User Interface}
 \printnomenclature		
 \clearpage
 
@@ -58,7 +71,7 @@ Ziel des Projekts ist, den regelmäßig anfallenden Arbeitsschritt ''Erstellen e
 \subsection{Projektbegründung}
 \label{sec:projektbegründung}
 
-Wie in Abschnitt \ref{sec:projektumfeld} erwähnt, betreibt die GNS eine Vielzahl an hoch spezialisierten Softwarelösungen für diverse Kunden. Aufgrund der Komplexität vieler dieser Anwendungen ist es nötig den Benutzern ein Handbuch zur Verfügung zu stellen.
+Wie in Abschnitt \ref{sec:projektumfeld} erwähnt, betreibt die GNS eine Vielzahl an hoch spezialisierten Softwarelösungen für diverse Kunden. Aufgrund der Komplexität vieler dieser Anwendungen ist es nötig, den Benutzern ein Handbuch zur Verfügung zu stellen.
 Zu diesem Zweck betreibt die GNS betriebsinterne Wikis, in denen Inhalte bezüglich der korrekten Bedienung einer Anwendung von Mitarbeitern der GNS gepflegt werden. \\
 
 2012 wurde von der GNS der sogenannte ''WikiConverter'' entwickelt. Dies ist ein Tool, welches die Inhalte eines MediaWikis extrahiert und diese in ein PDF- bzw. HTML-Dokument konvertiert.
@@ -124,7 +137,7 @@ Abweichend vom Projektantrag werden das Pflichten- sowie das Lastenheft nur in A
 
 \subsection{Resourcenplanung}
 
-Im Folgenden werden alle für die Durchführung des Projekts bezogenen Resourcen aufgelistet. Diese werden durch den Auftraggeber, hier die GNS, bereitgestellt.
+Im Folgenden werden alle für die Durchführung des Projekts benötigten Resourcen aufgelistet. Diese werden durch den Auftraggeber, hier die GNS, bereitgestellt.
 
 \begin{savenotes}
 \begin{table}[H]
@@ -135,29 +148,29 @@ Im Folgenden werden alle für die Durchführung des Projekts bezogenen Resourcen
 		\textbf{Art der Resource} & \textbf{Beschreibung} \\\hline		
 		
 		\rowcolor{MidnightBlue!15}				
-		\textbf{Sachliche Resource} & \\
+		\textbf{Sachliche Ressourcen} & \\
 		Projektbüro & \\
 		Computer & \\
 		\hspace{1.5em} IDE & Eclipse for JEE Developers\footnote{\url{http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars1}, abgerufen am 27.10.2015} \\
 		Demilitarisierte Zone & zu Testzwecken \\
 		
 		\rowcolor{MidnightBlue!15}			
-		\textbf{Personelle Resource} & \\
+		\textbf{Personelle Ressourcen} & \\
 		Projektleiter & Oliver Herrmann \\
 		Projektmitarbeiter & Oliver Herrmann \\
 	
 			    
 	\end{tabular}
-	\caption{Resourcen}
-	\label{tab:resourcen}
+	\caption{Ressourcen}
+	\label{tab:ressourcen}
 \end{table}
 \end{savenotes}
 
 \subsection{Entwicklungsprozess}
 
-Grundlage für den Entwicklungsprozess bildet das iterative Wasserfallmodell
-\footnote{\url{http://www.pi.informatik.tu-darmstadt.de/fileadmin/user_upload/Group_PI/LV__SE_RE/R_01_Wasserfallmodell__Ausarbeitung__Schwaiger.pdf} abgerufen am 05.10.2015}.
-Dies wurde gewählt, da es gut mit Projekten geringen bis mittleren Umfangs harmoniert. Andere Modelle wie z.B. Scrum oder Extreme-Programming wurden nicht in Erwägung gezogen, da sie die Projektarbeit im Team erfordern.
+Grundlage für den Entwicklungsprozess bildet das iterative
+Wasserfallmodell\footnote{\url{http://www.pi.informatik.tu-darmstadt.de/fileadmin/user_upload/Group_PI/LV__SE_RE/R_01_Wasserfallmodell__Ausarbeitung__Schwaiger.pdf} abgerufen am 05.10.2015}.
+Dies wurde gewählt, da es gut mit Projekten geringen bis mittleren Umfangs harmoniert. Andere Modelle wie z.B. Scrum oder Extreme-Programming wurden nicht in Erwägung gezogen, da sie die Projektarbeit im Team voraussetzen.
 
 \section{Analysephase}
 
@@ -165,7 +178,8 @@ Dies wurde gewählt, da es gut mit Projekten geringen bis mittleren Umfangs harm
 
 Der jetzige Stand bezüglich des Workflows ''Erstellen eines Benutzerhandbuchs'' sieht vor, dass der ausführende Mitarbeiter den WikiConverter aus dem internen CVS auscheckt, im Quellcode Angaben zu dem zu konvertierenden Wiki (URL, Hauptseite) ergänzt und den Quellcode anschließend kompiliert und ausführt. Das Ergebnis der Ausführung sind die generierten PDF- und HTML-Dateien.
 
-Das Projekt ''\Projekt'' sieht vor, den Workflow wie folgt zu definieren:
+Das Projekt ''\Projekt'' definiert den überarbeiteten Workflow wie folgt:
+
 \begin{itemize}
 	\item Der Benutzer loggt sich online in der Anwendung ein.
 	\item Der Benutzer wählt ein existierendes Wiki aus oder pflegt ein neues ein. (Nötige Angaben sind URL und Hauptseite des Wikis)
@@ -238,7 +252,7 @@ Geschätze Dauer: 2 Minuten. \\
 
 Hier ist anzumerken, dass durch die zentrale Speicherung der konvertierten Ergebnisse dem Nutzer ermöglicht wird, den zeitintensiven Schritt der Konvertierung auszulassen, wenn ein adäquates Ergebnis bereits existiert. Dies ist z.B dann der Fall, wenn die Konvertierung kürzlich durch einen dritten Mitarbeiter vorgenommen wurde und seitdem keine relevanten Änderungen am zu Grunde liegenden Wiki auftraten.
 
-Konservativ abgeschätzt wird davon ausgegangen, dass in 80\% der Fälle Alternative 1 und in den übrigen 20\% Alternative 2 eintreten wird.
+Konservativ betrachtet wird davon ausgegangen, dass in 80\% der Fälle Alternative 1 und in den übrigen 20\% Alternative 2 eintreten wird.
 \begin{equation} \label{eq:t_workflow_durchschn}
 	T_\emptyset = 0.8 * 5m + 0.2* 2m = 4.4m
 \end{equation}
@@ -257,11 +271,19 @@ Aus Formel \ref{eq:t_workflow_durchschn} ergibt sich eine durchschnittliche Daue
 Dies entspricht nach Formel \ref{eq:t_workflow_delta_rel} einer Einsparung von \textbf{71 \%} und verspricht ein Einhalten des in Kapitel \ref{sec:projektbegründung} ausgesprochenen Ziels, die durchschnittliche Arbeitszeit des Workflows um mindestens mindestens 25\% zu reduzieren. \\
 
 \begin{equation} \label{eq:t_workflow_delta_jahr}
-	T_{\Delta jahr} = T_{\Delta abs} * 10 * 12 = 1272m = 21,2h
+\begin{split}
+	T_{\Delta jahr}	&= T_{\Delta abs} * N_{Workflow/Monat} * N_{Monat/Jahr} \\
+					& = T_{\Delta abs} * 10 * 12 = 1272m \\
+					& = 21,2h
+\end{split}
 \end{equation}
 
 \begin{equation} \label{eq:k_workflow_jahr}
-	E_{jahr} = T_{\Delta jahr} *  \frac{30 \euro}{h} = 636 \euro
+\begin{split}
+	E_{jahr}	&= T_{\Delta jahr} *  Stundensatz_{Mitarbeiter} \\
+				& = T_{\Delta jahr} *  \frac{30 \euro}{h} \\
+				& = 636 \euro
+\end{split}
 \end{equation}
 
 Unter der Annahme, dass der Workflow durchschnittlich zehnmal pro Monat von einem Fachangestellten durchgeführt wird ergibt sich daraus eine Zeitersparnis von 21,2 Stunden pro Jahr, was nach Formel \ref{eq:k_workflow_jahr} einer jährlichen monetären Ersparnis von \textbf{636 \euro{}} entspricht.
@@ -272,7 +294,11 @@ Unter der Annahme, dass der Workflow durchschnittlich zehnmal pro Monat von eine
 
 Die Kosten des Projekts werden allein durch die Kosten der Entwicklung bestimmt. Es werden keine nicht bereits vorhandenen Ressourcen für das Projekt verwendet.
 \begin{equation} \label{eq:4}
-	K_{ges} = 70h * \frac{16 \euro}{h} = 1120 \euro
+\begin{split}
+	K_{ges}	&= T_{Projekt} * Stundensatz_{Projekt-Mitarbeiter} \\
+			& = 70h * \frac{16 \euro}{h} \\
+			& = 1120 \euro
+\end{split}
 \end{equation}
 Bei einem kalkulierten Projektumfang von 70 Stunden ergibt sich aus Formel \ref{eq:4} ein Kostenumfang von \textbf{1120 \euro{}}, unter der Voraussetzung, dass als Projektmitarbeiter ausschließlich ein Auszubildender eingesetzt wird. \\
 
@@ -282,7 +308,7 @@ Eine detaillierte, nach Phasen unterteilte Übersicht der Kosten findet sich im 
 \subsubsection{Amortisationsdauer}
 
 \begin{equation} \label{eq:amort}
-	T_{amortisation} = \frac{K_{ges}}{E_{jahr}} = \frac{1120 \euro}{636 \euro / 1a} = 1,76a
+	T_{amortisation} = \frac{K_{ges}}{E_{jahr} / a} = \frac{1120 \euro}{636 \euro / a} = 1,76a
 \end{equation}
 
 Zieht man die Ergebnisse aus Kapitel \ref{sec:nutzen_des_projekts} und \ref{sec:kosten_des_projekts} heran und betrachtet diese relativ zueinander, wie in Formel \ref{eq:amort} geschehen, lässt sich feststellen, dass sich das Projekt nach etwa 1,8 Jahren amortisiert hat.
@@ -306,7 +332,7 @@ Hierzu zählen vor allem Risiken aus Fehlern der Planung. Diese Risiken sind bed
 
 \paragraph{Gruppe 3}
 Leicht vermeidbare Risiken \\
-Dies sind in erster Linie Risiken die in der Entwicklung auftreten können. Das Eintreten dieser Risiken wird in erster Linie durch die Erfahrung und intensive fachliche Vorbereitung der Projektmitarbeiter vermieden. Des Weiteren hilft das im Qualitätssicherungskonzept beinhaltete Testkonzept hier für eine frühzeitige Erkennung von Konsequenzen dieser Risikogruppe. \\
+Dies sind in erster Linie Risiken die in der Entwicklung auftreten können. Das Eintreten dieser Risiken wird primär durch die Erfahrung und intensive fachliche Vorbereitung des Projektmitarbeiters vermieden. Des Weiteren hilft das im Qualitätssicherungskonzept beinhaltete Testkonzept hier für eine frühzeitige Erkennung von Konsequenzen dieser Risikogruppe. \\
 
 Die möglichen Konsequenzen lassen sich wiederum in zwei Bereiche gruppieren.
 
@@ -350,7 +376,7 @@ Als Ergebnis der ''Make or Buy''-Analyse lässt sich festlegen, dass eine eigens
 \subsection{Nutzwertanalyse}
 \label{sec:nutzwertanalyse}
 
-Für die entwicklungsrelevanten Bereiche ''Backend'' und ''Frontend'' werden jeweils Nutzwertanalysen durchgeführt, um im Vorhinein die optimale Architektur zu bestimmen.
+Für die entwicklungsrelevanten Bereiche ''Backend'' und ''Frontend'' werden jeweils Nutzwertanalysen durchgeführt, um im Vorhinein die optimale architekturspezifische Implementierung zu bestimmen.
 
 \begin{table}[H]
 	\centering
@@ -422,7 +448,7 @@ Hier wird ein gekürzter Auszug aus diesem dargestellt.
 		Übertragbarkeit 	&	& X	&	&	\\
 	\end{tabular}	
 	
-	\caption{Qualitätsanforderungen an die Anwendung - Auszug}
+	\caption{Qualitätsanforderungen an die Anwendung}
 	\label{tab:qualitätsanforderungen}
 \end{table}
 
@@ -474,13 +500,13 @@ Eine detaillierte Übersicht über die Zielbestimmungen, den Produkteinsatz und 
 
 Im Folgenden wird dargelegt, aus welchen Gründen die gewählte Zielplattform anvisiert wird.
 
-\paragraph{Programmiersprache} JAVA, TypeScript \\
+\paragraph{Programmiersprache} Java, TypeScript \\
 Das Backend der Anwendung wird mit der Programmiersprache Java in Version 7 umgesetzt.
-Dies ist primär mit der bereits vorhandenen Erfahrung der Projektmitarbeiter begründet. Außerdem ist die bereits existierende Ziellaufzeitumgebung (s. \ref{par:zielplattform_server}) für Java-Anwendungen ausgelegt.
-Für die Frontend-Programmierung wird TypeScript in Version 1.6 verwendet. Dies ist damit begründet, dass wie in Kapitel \ref{sec:nutzwertanalyse} beschrieben der Einsatz eines JavaScript-Frameworks anvisiert wird. Des weiteren bietet TypeScript im Gegensatz zu JavaScript umfassendere statische Typprüfungen. Dies erleichtert die Programmierung und verhindert spätere Laufzeitfehler.
+Dies ist primär mit der bereits vorhandenen Erfahrung des Projektmitarbeiters begründet. Außerdem ist die bereits existierende Ziellaufzeitumgebung (s. \ref{par:zielplattform_server}) für Java-Anwendungen ausgelegt.
+Für die Frontend-Programmierung wird TypeScript in Version 1.6 verwendet. Dies ist damit begründet, dass, wie in Kapitel \ref{sec:nutzwertanalyse} beschrieben, der Einsatz eines JavaScript-Frameworks anvisiert wird. Des weiteren bietet TypeScript im Gegensatz zu JavaScript umfassendere statische Typprüfungen. Dies erleichtert die Programmierung und verhindert spätere Laufzeitfehler.
 
 \paragraph{Application-Server} Tomcat \\
-Als Application-Server wird Tomcat in Version 7 eingesetzt. Dies liegt vor allem an dem leichtgewichtigen Umfang und den damit verbundenen geringen Installations- und Administrationsaufwand des Application-Servers. 
+Als Application-Server wird Tomcat in Version 7 eingesetzt. Dies liegt vor allem an dem leichtgewichtigen Umfang und den damit verbundenen geringen Installations- und Administrationsaufwand des Applicationservers. 
 
 \paragraph{Datenbank} MySQL \\
 Als Datenbanksystem wird MySQL verwendet. Dies ist in erster Linie mit der bereits vorhandenen Erfahrung des Projektmitarbeiters begründet.
@@ -489,11 +515,11 @@ Als Datenbanksystem wird MySQL verwendet. Dies ist in erster Linie mit der berei
 \label{par:zielplattform_server}%
 Die spätere Laufzeitumgebung inklusive der Installation der Anwendung in dieser ist, wie in Kapitel \ref{sec:projektabgrenzung} beschrieben, zwar nicht Teil des Projekts, der Vollständigkeit halber ist hier allerdings in Kürze die vom Kunden bereitgestellt Server-Umgebung beschrieben.
 \begin{itemize}
-	\item Server mit ausreichen leistungsfähigem Intel / AMD Prozessor
+	\item Server mit ausreichend leistungsfähigem Intel / AMD Prozessor
 	\item ausreichend Arbeitsspeicher
 	\item Debian Linux Betriebssystem
 	\item MySQL Datenbankserver
-	\item Tomcat Application-Server	
+	\item Tomcat Applicationserver	
 	\item Java Laufzeitumgebung in Version 7 oder höher
 \end{itemize}
 
@@ -512,7 +538,7 @@ Daraus ergeben sich folgende Vorteile:
 
 \paragraph{Separation of Concerns}
 Der Server hat klar definierte und abgegrenzte Aufgabengebiete. Dazu zählen das Verwalten
-(CRUD\footnote{Create, Update, Read, Delete}) von persistenten Daten. Sowohl von solchen, die den Application-Lifecycle überleben (Datenbankeinträge), als auch von flüchtigen, wie etwa Session-Daten. Außerdem ist der Server für die Zugriffsbeschränkung auf die Daten zuständig.
+(CRUD\footnote{Create, Update, Read, Delete}) von persistenten Daten. Sowohl von solchen, die den Application-Lifecycle überleben (Datenbankeinträge), als auch von flüchtigen, wie etwa Sessiondaten. Außerdem ist der Server für die Zugriffsbeschränkung auf die Daten zuständig.
 
 Nicht zu den Aufgaben des Servers gehören dagegen z.B. Oberflächen-Logik oder das Halten des generellen Status einer Session.
 
@@ -538,7 +564,7 @@ Flux\footnote{\url{https://facebook.github.io/flux/docs/overview.html}, abgerufe
 Diese weist folgende Vorteile auf:
 
 \paragraph{Trennung von Daten und Darstellung}
-Durch die strikte Trennung von Daten (repräsentiert durch zustandslose Stores) und deren Darstellung (zustandbehaftete Komponenten) werden Fehler in der Geschäft- und Oberflächenlogik vermieden. Der unidirektionale Datenfluß der Flux-Architektur verhindert außerdem konkurrierende Zugriffe auf Daten.
+Durch die strikte Trennung von Daten (repräsentiert durch zustandslose Stores) und deren Darstellung (zustandsbehaftete Komponenten) werden Fehler in der Geschäft- und Oberflächenlogik vermieden. Der unidirektionale Datenfluß der Flux-Architektur verhindert außerdem konkurrierende Zugriffe auf Daten.
 
 \paragraph{Übersichtlichkeit}
 Die starke Modularisierung (Aufteilung in Stores, Actions und Komponenten) erhöht die Übersichtlichkeit und erleichtert langfristig die Analyse bzw. das Refactoring des Frontends.
@@ -555,7 +581,7 @@ Die Benutzeroberfläche wird mit den Techniken HTML in Version 5 und CSS in Vers
 Die Benutzeroberfläche wird in einzelne Bereiche unterteilt, um dem Benutzer eine durchgehend gleichbleibende Grundstruktur zu bieten und so die Übersichtlichkeit der Anwendung zu maximieren.
 
 \paragraph{Layout}
-Zu diesem Zweck wird die Oberfläche in einen Header, welcher die Navigationsleiste, sowie Angaben zum aktuellen Status beherbergt, sowie einen Hauptbereich, welcher die statusabhängigen Formulare und Daten anzeigt unterteilt. Der Hauptbereich ist wiederum in Spalten und Zeilen (je nach aktuellem Status) unterteilt, wobei die maximale Anzahl dieser Unterbereiche auf üblicherweise zwei bis drei beschränkt ist, um die Übersichtlichkeit zu gewährleisten.
+Zu diesem Zweck wird die Oberfläche in einen Header, welcher die Navigationsleiste, sowie Angaben zum aktuellen Status beherbergt, sowie einen Hauptbereich, welcher die statusabhängigen Formulare und Daten anzeigt, unterteilt. Der Hauptbereich ist wiederum in Spalten und Zeilen (je nach aktuellem Status) unterteilt, wobei die maximale Anzahl dieser Unterbereiche auf üblicherweise zwei bis drei beschränkt ist, um die Übersichtlichkeit zu gewährleisten.
 
 \paragraph{Design Grundlagen}
 Die Benutzeroberfläche wird nach den Grundlagen von
@@ -569,12 +595,12 @@ Material Design\footnote{\url{https://www.google.com/design/spec/material-design
 Zum anderen orientiert sich das Farbschema der Oberfläche am Corporate Design des Auftraggebers.
 
 \subsubsection{Prototyp}
-Eine bildhafte Darstellung eines funktionslosen Prototypen, welcher die hier aufgeführten visuellen Konzepte verdeutlichen soll findet sich in Anhang \ref{app:prototyp} auf Seite \pageref{app:prototyp}.
+Eine bildhafte Darstellung eines Prototypen, welcher die hier aufgeführten visuellen Konzepte verdeutlichen soll, findet sich in Anhang \ref{app:prototyp} auf Seite \pageref{app:prototyp}.
 
 \subsection{Datenmodell}
 \label{sec:datenmodell}
 
-Das der Anwendung zugrunde liegenden Datenmodell wird in Form eines Entity-Relationship-Modells in Anhang \ref{app:erm} auf Seite \pageref{app:erm} dargestellt.
+Das der Anwendung zugrunde liegende Datenmodell wird in Form eines Entity-Relationship-Modells in Anhang \ref{app:erm} auf Seite \pageref{app:erm} dargestellt.
 
 \subsection{Geschäftslogik}
 
@@ -592,7 +618,7 @@ JavaDoc\footnote{\url{http://www.oracle.com/technetwork/articles/java/index-jsp-
 bzw.
 JsDoc\footnote{\url{http://usejsdoc.org/}, abgerufen am 27.10.2015}.
 
-Des Weiteren werden Informationen bezüglich der Entwicklungsumgebung und -toolchain in readme-Dateien schriftlich festgehalten, um die Wartung durch Dritte zu vereinfachen.
+Des Weiteren werden Informationen bezüglich der Entwicklungsumgebung und -toolchain in Hilfedateien schriftlich festgehalten, um die Wartung durch Dritte zu vereinfachen.
 
 \subsubsection*{Tests}
 \label{sec:test:test}
@@ -652,7 +678,7 @@ Die Anwendung führt beim Start eine Prüfung des aktuellen Schemas durch und f�
 
 \subsection{Implementierung der Geschäftslogik}
 
-Die Entwicklung der Geschäftslogik erfolgt, wie bereits erwähnt, mit der Programmiersprache JAVA unter Zuhilfenahme der Entwicklungsumgebung Eclipse. Für die Verwaltung von Abhängigkeiten und Bibliotheken wird
+Die Entwicklung der Geschäftslogik erfolgt, wie bereits erwähnt, mit der Programmiersprache Java unter Zuhilfenahme der Entwicklungsumgebung Eclipse. Für die Verwaltung von Abhängigkeiten und Bibliotheken wird
 Apache Maven\footnote{\url{https://maven.apache.org/}, abgerufen am 27.10.2015}
 verwendet.
 
@@ -676,7 +702,7 @@ Alle Entitäten des Datenmodells, die programmatisch editierbar sind, werden dur
 
 \subsubsection*{REST-API}
 
-Für jeden Entitätsklasse wird eine zugehörige API-Klasse erstellt. Diese erzeugen jeweils die über HTTP ansprechbaren REST-Endpunkte und sind für die Ausführung aller Datenbankzugriffe zuständig. Alle API-Klassen leiten von der generischen Klasse \texttt{BaseAPI} ab. In dieser sind bereits eine Reihe an ansprechbaren Pfaden / Methoden implementiert, sodass spezielle API-Klassen nur entitätsspezifische Methoden umsetzen müssen.
+Für jede Entitätsklasse wird eine zugehörige API-Klasse erstellt. Diese erzeugen jeweils die über HTTP ansprechbaren REST-Endpunkte und sind für die Ausführung aller Datenbankzugriffe zuständig. Alle API-Klassen leiten von der generischen Klasse \texttt{BaseAPI} ab. In dieser sind bereits eine Reihe an ansprechbaren Pfaden / Methoden implementiert, sodass spezielle API-Klassen nur entitätsspezifische Methoden umsetzen müssen.
 
 Ein Auszug der Klasse \texttt{BaseAPI} befindet sich Anhang \ref{lst:baseapi} auf Seite \pageref{lst:baseapi}.
 
@@ -693,7 +719,7 @@ Unterstützend wird das Framework React zur Beschreibung komplexer GUI-Komponent
 \subsubsection*{Layout}
 
 Das Layout der Oberfläche wird im Wesentlichen durch die Anordnung einzelner Komponenten in Spalten und Zeilen festgelegt.
-Die wird mit Hilfe der CSS3 Spezifikation
+Dies wird mit Hilfe der CSS3 Spezifikation
 FlexBox\footnote{\url{http://www.w3.org/TR/css-flexbox-1/}, abgerufen am 27.10.2015} umgesetzt.
 
 Des Weiteren passt sich das Layout dynamisch an das Ausgabeformat an, um so eine effiziente Anordnung der einzelnen Komponenten auf verschiedenen Endgeräten zu gewährleisten. Dies wird mit Hilfe der CSS Spezifikation
@@ -718,7 +744,7 @@ zum Einsatz.
 
 Die Tests sind so konzipiert, dass sie die natürliche Interaktion des Benutzers mit der graphischen Schnittstelle möglichst präzise nachbilden, um Fehler in der Oberfächenimplementierung frühzeitig aufzudecken.
 
-Da die Ausführung der Test und die Ausgabe derer Ergebnisse über einen Browser erfolgt wird von der expliziten Führung eines Testprotokolls abgesehen.
+Da die Ausführung der Tests und die Ausgabe deren Ergebnisse über einen Browser erfolgt, wird von der expliziten Führung eines Testprotokolls abgesehen.
 
 \subsection{Zwischenstand}
 
@@ -730,7 +756,7 @@ Da die Ausführung der Test und die Ausgabe derer Ergebnisse über einen Browser
 		\textbf{Teilphase} & \textbf{Geplant} & \textbf{Tatsächlich} & \textbf{Differenz} \\\hline		
 		
 
-		Erstellen des Datenbanktabellen & 2h & 1h 	& - 1h\\	    
+		Erstellen der Datenbanktabellen & 2h & 1h 	& - 1h\\	    
 	    Entwicklung des Backends 		& 7h & 10h 	& + 3h\\	    
 	    Entwicklung des Frontends 		& 9h & 15h 	& + 6h\\	     
 	    Dokumentation des Quellcodes 	& 2h & 2h 	&  \\	      
@@ -786,7 +812,7 @@ Im Rahmen der Einführung wurde vom Projektleiter eine Anwenderschulung abgehalt
 		\textbf{Teilphase} & \textbf{Geplant} & \textbf{Tatsächlich} & \textbf{Differenz} \\\hline		
 		
 		\rowcolor{gray!15}
-		Anwenderschulungs & 2h & \timeEinfuehrung & \timeEinfuehrungDiff \\\hline    	    	    
+		Anwenderschulung & 2h & \timeEinfuehrung & \timeEinfuehrungDiff \\\hline    	    	    
 
 		\rowcolor{white!15}				
 		\textbf{Gesamt} & \textbf{2h} & \textbf{\timeEinfuehrung} & \textbf{\timeEinfuehrungDiff} \\			
@@ -862,11 +888,11 @@ Weiter lässt sich festhalten, dass der in Kapitel \ref{sec:projektphasen} erlä
 
 	    
 	\end{tabular}
-	\caption{Zwischenstand nach der Dokumentationsphase}
+	\caption{Soll-Ist Endstand}
 	\label{tab:phasen_soll_ist}
 \end{table}
 
-\subsection{Lesson-Learned}
+\subsection{Lessons-Learned}
 
 Im Zuge des Projekts konnte der Projektleiter umfassende Erfahrung bezüglich der Planung und Durchführung eines Softwareprojekts sammeln. Dabei wurde erkennbar, wie wichtig eine detaillierte Planung aller Phasen eines Projekts ist, um dieses erfolgreich zum Abschluss zu bringen.
 

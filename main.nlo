@@ -1,6 +1,13 @@
-\nomenclatureentry{aKIS@[{KIS}]\begingroup Abteilung der GNS für Softwareentwicklung\nomeqref {0}|nompageref}{4}
-\nomenclatureentry{aGNS@[{GNS}]\begingroup Gesellschaft für Nuklear-Service mbH\nomeqref {0}|nompageref}{4}
-\nomenclatureentry{aHosting@[{Hosting}]\begingroup Bereitstellen einer Web-Anwendung auf einem Web-Server\nomeqref {0}|nompageref}{4}
-\nomenclatureentry{aCVS@[{CVS}]\begingroup Concurrent Version System\nomeqref {0}|nompageref}{4}
-\nomenclatureentry{aREST@[{REST}]\begingroup Representational State Transfer\nomeqref {0}|nompageref}{4}
-\nomenclatureentry{aJSON@[{JSON}]\begingroup JavaScript Object Notation\nomeqref {0}|nompageref}{4}
+\nomenclatureentry{aKIS@[{KIS}]\begingroup Abteilung der GNS für Softwareentwicklung\nomeqref {0}|nompageref}{5}
+\nomenclatureentry{aGNS@[{GNS}]\begingroup Gesellschaft für Nuklear-Service mbH\nomeqref {0}|nompageref}{5}
+\nomenclatureentry{aHosting@[{Hosting}]\begingroup Bereitstellen einer Web-Anwendung auf einem Web-Server\nomeqref {0}|nompageref}{5}
+\nomenclatureentry{aCVS@[{CVS}]\begingroup Concurrent Version System\nomeqref {0}|nompageref}{5}
+\nomenclatureentry{aREST@[{REST}]\begingroup Representational State Transfer\nomeqref {0}|nompageref}{5}
+\nomenclatureentry{aJSON@[{JSON}]\begingroup JavaScript Object Notation\nomeqref {0}|nompageref}{5}
+\nomenclatureentry{aHTTP@[{HTTP}]\begingroup Hypertext Transfer Protocol\nomeqref {0}|nompageref}{5}
+\nomenclatureentry{aHTML@[{HTML}]\begingroup Hypertext Markup Language\nomeqref {0}|nompageref}{5}
+\nomenclatureentry{aCSS@[{CSS}]\begingroup Cascading Style Sheets\nomeqref {0}|nompageref}{5}
+\nomenclatureentry{aURL@[{URL}]\begingroup Uniform Resource Locator\nomeqref {0}|nompageref}{5}
+\nomenclatureentry{aJEE@[{JEE}]\begingroup Java Platform, Enterprise Edition\nomeqref {0}|nompageref}{5}
+\nomenclatureentry{aAPI@[{API}]\begingroup Application Programming Interface\nomeqref {0}|nompageref}{5}
+\nomenclatureentry{aGUI@[{GUI}]\begingroup Graphical User Interface\nomeqref {0}|nompageref}{5}
